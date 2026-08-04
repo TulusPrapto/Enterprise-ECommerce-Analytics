@@ -1,0 +1,48 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Database
+*.duckdb
+*.db
+database/
+# Power BI
+*.pbix
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Raw datasets (ukuran besar)
+data/raw/
+
+# Processed exports (opsional)
+data/exports/
+
+# Python build
+build/
+dist/
+*.egg-info/
