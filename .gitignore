@@ -1,48 +1,37 @@
-# ==========================
+# Virtual Environment
+.venv/
+
 # Python
-# ==========================
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
-.ipynb_checkpoints/
-*.pyc
-
-# Virtual Environment
-.venv/
-venv/
-env/
-
-# Jupyter
-.ipynb_checkpoints/
 
 # VS Code
 .vscode/
 
-# Database
-*.duckdb
-*.db
-database/
-# Power BI
-*.pbix
+# Jupyter
+.ipynb_checkpoints/
 
 # Logs
 *.log
 
-# Temporary files
+# Power BI autosave
 *.tmp
 
-# OS Files
+# DuckDB WAL
+*.wal
+
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
+# Python cache
+.pytest_cache/
+.coverage
 
-# Raw datasets (ukuran besar)
-data/raw/
+# Environment
+.env
 
-# Processed exports (opsional)
-data/exports/
-
-# Python build
-build/
-dist/
-*.egg-info/
+# DuckDB temporary
+*.duckdb.tmp

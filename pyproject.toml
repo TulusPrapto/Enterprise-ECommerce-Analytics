@@ -1,0 +1,8 @@
+[project]
+name = "enterprise-ecommerce-analytics"
+version = "0.1.0"
+description = "End-to-end analytics platform using DuckDB, Polars, SQL and Power BI."
+requires-python = ">=3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
