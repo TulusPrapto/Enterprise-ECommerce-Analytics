@@ -1,0 +1,23 @@
+# Normalize text files
+* text=auto
+
+# Python
+*.py text
+
+# SQL
+*.sql text
+
+# Markdown
+*.md text
+
+# CSV
+*.csv text
+
+# PowerShell
+*.ps1 text
+
+# Binary files
+*.pbix binary
+*.png binary
+*.jpg binary
+*.jpeg binary
