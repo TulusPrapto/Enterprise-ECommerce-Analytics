@@ -1,0 +1,276 @@
+{
+  "project": "Enterprise E-Commerce Analytics",
+  "analysis": "Relationship Analysis",
+  "relationships": [
+    {
+      "relationship": "customers_to_orders",
+      "parent_table": "customers",
+      "parent_key": [
+        "customer_id"
+      ],
+      "child_table": "orders",
+      "child_key": [
+        "customer_id"
+      ],
+      "parent_key_stats": {
+        "row_count": 99441,
+        "unique_key_count": 99441,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 99441,
+        "unique_key_count": 99441,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "orphan_child_key_count": 0,
+      "parent_key_without_children_count": 0,
+      "max_child_rows_per_parent": 1,
+      "avg_child_rows_per_parent": 1.0,
+      "referential_integrity": true
+    },
+    {
+      "relationship": "orders_to_order_items",
+      "parent_table": "orders",
+      "parent_key": [
+        "order_id"
+      ],
+      "child_table": "order_items",
+      "child_key": [
+        "order_id"
+      ],
+      "parent_key_stats": {
+        "row_count": 99441,
+        "unique_key_count": 99441,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 112650,
+        "unique_key_count": 98666,
+        "duplicate_key_rows": 13984,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 0,
+      "parent_key_without_children_count": 775,
+      "max_child_rows_per_parent": 21,
+      "avg_child_rows_per_parent": 1.1417,
+      "referential_integrity": true
+    },
+    {
+      "relationship": "orders_to_payments",
+      "parent_table": "orders",
+      "parent_key": [
+        "order_id"
+      ],
+      "child_table": "payments",
+      "child_key": [
+        "order_id"
+      ],
+      "parent_key_stats": {
+        "row_count": 99441,
+        "unique_key_count": 99441,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 103886,
+        "unique_key_count": 99440,
+        "duplicate_key_rows": 4446,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 0,
+      "parent_key_without_children_count": 1,
+      "max_child_rows_per_parent": 29,
+      "avg_child_rows_per_parent": 1.0447,
+      "referential_integrity": true
+    },
+    {
+      "relationship": "orders_to_reviews",
+      "parent_table": "orders",
+      "parent_key": [
+        "order_id"
+      ],
+      "child_table": "reviews",
+      "child_key": [
+        "order_id"
+      ],
+      "parent_key_stats": {
+        "row_count": 99441,
+        "unique_key_count": 99441,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 99224,
+        "unique_key_count": 98673,
+        "duplicate_key_rows": 551,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 0,
+      "parent_key_without_children_count": 768,
+      "max_child_rows_per_parent": 3,
+      "avg_child_rows_per_parent": 1.0056,
+      "referential_integrity": true
+    },
+    {
+      "relationship": "products_to_order_items",
+      "parent_table": "products",
+      "parent_key": [
+        "product_id"
+      ],
+      "child_table": "order_items",
+      "child_key": [
+        "product_id"
+      ],
+      "parent_key_stats": {
+        "row_count": 32951,
+        "unique_key_count": 32951,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 112650,
+        "unique_key_count": 32951,
+        "duplicate_key_rows": 79699,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 0,
+      "parent_key_without_children_count": 0,
+      "max_child_rows_per_parent": 527,
+      "avg_child_rows_per_parent": 3.4187,
+      "referential_integrity": true
+    },
+    {
+      "relationship": "sellers_to_order_items",
+      "parent_table": "sellers",
+      "parent_key": [
+        "seller_id"
+      ],
+      "child_table": "order_items",
+      "child_key": [
+        "seller_id"
+      ],
+      "parent_key_stats": {
+        "row_count": 3095,
+        "unique_key_count": 3095,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 112650,
+        "unique_key_count": 3095,
+        "duplicate_key_rows": 109555,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 0,
+      "parent_key_without_children_count": 0,
+      "max_child_rows_per_parent": 2033,
+      "avg_child_rows_per_parent": 36.3974,
+      "referential_integrity": true
+    },
+    {
+      "relationship": "products_to_category_translation",
+      "parent_table": "category_translation",
+      "parent_key": [
+        "product_category_name"
+      ],
+      "child_table": "products",
+      "child_key": [
+        "product_category_name"
+      ],
+      "parent_key_stats": {
+        "row_count": 71,
+        "unique_key_count": 71,
+        "duplicate_key_rows": 0,
+        "null_key_rows": 0,
+        "is_unique": true
+      },
+      "child_key_stats": {
+        "row_count": 32951,
+        "unique_key_count": 74,
+        "duplicate_key_rows": 32877,
+        "null_key_rows": 610,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 2,
+      "parent_key_without_children_count": 0,
+      "max_child_rows_per_parent": 3029,
+      "avg_child_rows_per_parent": 445.2838,
+      "referential_integrity": false
+    },
+    {
+      "relationship": "customers_to_geolocation",
+      "parent_table": "geolocation",
+      "parent_key": [
+        "geolocation_zip_code_prefix"
+      ],
+      "child_table": "customers",
+      "child_key": [
+        "customer_zip_code_prefix"
+      ],
+      "parent_key_stats": {
+        "row_count": 1000163,
+        "unique_key_count": 19015,
+        "duplicate_key_rows": 981148,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "child_key_stats": {
+        "row_count": 99441,
+        "unique_key_count": 14994,
+        "duplicate_key_rows": 84447,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 157,
+      "parent_key_without_children_count": 4178,
+      "max_child_rows_per_parent": 142,
+      "avg_child_rows_per_parent": 6.6321,
+      "referential_integrity": false
+    },
+    {
+      "relationship": "sellers_to_geolocation",
+      "parent_table": "geolocation",
+      "parent_key": [
+        "geolocation_zip_code_prefix"
+      ],
+      "child_table": "sellers",
+      "child_key": [
+        "seller_zip_code_prefix"
+      ],
+      "parent_key_stats": {
+        "row_count": 1000163,
+        "unique_key_count": 19015,
+        "duplicate_key_rows": 981148,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "child_key_stats": {
+        "row_count": 3095,
+        "unique_key_count": 2246,
+        "duplicate_key_rows": 849,
+        "null_key_rows": 0,
+        "is_unique": false
+      },
+      "orphan_child_key_count": 7,
+      "parent_key_without_children_count": 16776,
+      "max_child_rows_per_parent": 49,
+      "avg_child_rows_per_parent": 1.378,
+      "referential_integrity": false
+    }
+  ]
+}
