@@ -1,0 +1,499 @@
+[
+  {
+    "file_name": "olist_customers_dataset.csv",
+    "file_size_bytes": 9033957,
+    "row_count": 99441,
+    "column_count": 5,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "customer_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 99441,
+        "uniqueness_percentage": 100.0
+      },
+      {
+        "name": "customer_unique_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 96096,
+        "uniqueness_percentage": 96.64
+      },
+      {
+        "name": "customer_zip_code_prefix",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 14994,
+        "uniqueness_percentage": 15.08
+      },
+      {
+        "name": "customer_city",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 4119,
+        "uniqueness_percentage": 4.14
+      },
+      {
+        "name": "customer_state",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 27,
+        "uniqueness_percentage": 0.03
+      }
+    ]
+  },
+  {
+    "file_name": "olist_geolocation_dataset.csv",
+    "file_size_bytes": 61273883,
+    "row_count": 1000163,
+    "column_count": 5,
+    "duplicate_row_count": 261831,
+    "columns": [
+      {
+        "name": "geolocation_zip_code_prefix",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 19015,
+        "uniqueness_percentage": 1.9
+      },
+      {
+        "name": "geolocation_lat",
+        "dtype": "Float64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 717372,
+        "uniqueness_percentage": 71.73
+      },
+      {
+        "name": "geolocation_lng",
+        "dtype": "Float64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 717615,
+        "uniqueness_percentage": 71.75
+      },
+      {
+        "name": "geolocation_city",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 8011,
+        "uniqueness_percentage": 0.8
+      },
+      {
+        "name": "geolocation_state",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 27,
+        "uniqueness_percentage": 0.0
+      }
+    ]
+  },
+  {
+    "file_name": "olist_order_items_dataset.csv",
+    "file_size_bytes": 15438671,
+    "row_count": 112650,
+    "column_count": 7,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "order_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 98666,
+        "uniqueness_percentage": 87.59
+      },
+      {
+        "name": "order_item_id",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 21,
+        "uniqueness_percentage": 0.02
+      },
+      {
+        "name": "product_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 32951,
+        "uniqueness_percentage": 29.25
+      },
+      {
+        "name": "seller_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 3095,
+        "uniqueness_percentage": 2.75
+      },
+      {
+        "name": "shipping_limit_date",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 93318,
+        "uniqueness_percentage": 82.84
+      },
+      {
+        "name": "price",
+        "dtype": "Float64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 5968,
+        "uniqueness_percentage": 5.3
+      },
+      {
+        "name": "freight_value",
+        "dtype": "Float64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 6999,
+        "uniqueness_percentage": 6.21
+      }
+    ]
+  },
+  {
+    "file_name": "olist_order_payments_dataset.csv",
+    "file_size_bytes": 5777138,
+    "row_count": 103886,
+    "column_count": 5,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "order_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 99440,
+        "uniqueness_percentage": 95.72
+      },
+      {
+        "name": "payment_sequential",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 29,
+        "uniqueness_percentage": 0.03
+      },
+      {
+        "name": "payment_type",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 5,
+        "uniqueness_percentage": 0.0
+      },
+      {
+        "name": "payment_installments",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 24,
+        "uniqueness_percentage": 0.02
+      },
+      {
+        "name": "payment_value",
+        "dtype": "Float64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 29077,
+        "uniqueness_percentage": 27.99
+      }
+    ]
+  },
+  {
+    "file_name": "olist_order_reviews_dataset.csv",
+    "file_size_bytes": 14451670,
+    "row_count": 99224,
+    "column_count": 7,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "review_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 98410,
+        "uniqueness_percentage": 99.18
+      },
+      {
+        "name": "order_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 98673,
+        "uniqueness_percentage": 99.44
+      },
+      {
+        "name": "review_score",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 5,
+        "uniqueness_percentage": 0.01
+      },
+      {
+        "name": "review_comment_title",
+        "dtype": "String",
+        "null_count": 87656,
+        "null_percentage": 88.34,
+        "unique_count": 4528,
+        "uniqueness_percentage": 4.56
+      },
+      {
+        "name": "review_comment_message",
+        "dtype": "String",
+        "null_count": 58247,
+        "null_percentage": 58.7,
+        "unique_count": 36160,
+        "uniqueness_percentage": 36.44
+      },
+      {
+        "name": "review_creation_date",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 636,
+        "uniqueness_percentage": 0.64
+      },
+      {
+        "name": "review_answer_timestamp",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 98248,
+        "uniqueness_percentage": 99.02
+      }
+    ]
+  },
+  {
+    "file_name": "olist_orders_dataset.csv",
+    "file_size_bytes": 17654914,
+    "row_count": 99441,
+    "column_count": 8,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "order_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 99441,
+        "uniqueness_percentage": 100.0
+      },
+      {
+        "name": "customer_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 99441,
+        "uniqueness_percentage": 100.0
+      },
+      {
+        "name": "order_status",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 8,
+        "uniqueness_percentage": 0.01
+      },
+      {
+        "name": "order_purchase_timestamp",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 98875,
+        "uniqueness_percentage": 99.43
+      },
+      {
+        "name": "order_approved_at",
+        "dtype": "String",
+        "null_count": 160,
+        "null_percentage": 0.16,
+        "unique_count": 90734,
+        "uniqueness_percentage": 91.24
+      },
+      {
+        "name": "order_delivered_carrier_date",
+        "dtype": "String",
+        "null_count": 1783,
+        "null_percentage": 1.79,
+        "unique_count": 81019,
+        "uniqueness_percentage": 81.47
+      },
+      {
+        "name": "order_delivered_customer_date",
+        "dtype": "String",
+        "null_count": 2965,
+        "null_percentage": 2.98,
+        "unique_count": 95665,
+        "uniqueness_percentage": 96.2
+      },
+      {
+        "name": "order_estimated_delivery_date",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 459,
+        "uniqueness_percentage": 0.46
+      }
+    ]
+  },
+  {
+    "file_name": "olist_products_dataset.csv",
+    "file_size_bytes": 2379446,
+    "row_count": 32951,
+    "column_count": 9,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "product_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 32951,
+        "uniqueness_percentage": 100.0
+      },
+      {
+        "name": "product_category_name",
+        "dtype": "String",
+        "null_count": 610,
+        "null_percentage": 1.85,
+        "unique_count": 74,
+        "uniqueness_percentage": 0.22
+      },
+      {
+        "name": "product_name_lenght",
+        "dtype": "Int64",
+        "null_count": 610,
+        "null_percentage": 1.85,
+        "unique_count": 67,
+        "uniqueness_percentage": 0.2
+      },
+      {
+        "name": "product_description_lenght",
+        "dtype": "Int64",
+        "null_count": 610,
+        "null_percentage": 1.85,
+        "unique_count": 2961,
+        "uniqueness_percentage": 8.99
+      },
+      {
+        "name": "product_photos_qty",
+        "dtype": "Int64",
+        "null_count": 610,
+        "null_percentage": 1.85,
+        "unique_count": 20,
+        "uniqueness_percentage": 0.06
+      },
+      {
+        "name": "product_weight_g",
+        "dtype": "Int64",
+        "null_count": 2,
+        "null_percentage": 0.01,
+        "unique_count": 2205,
+        "uniqueness_percentage": 6.69
+      },
+      {
+        "name": "product_length_cm",
+        "dtype": "Int64",
+        "null_count": 2,
+        "null_percentage": 0.01,
+        "unique_count": 100,
+        "uniqueness_percentage": 0.3
+      },
+      {
+        "name": "product_height_cm",
+        "dtype": "Int64",
+        "null_count": 2,
+        "null_percentage": 0.01,
+        "unique_count": 103,
+        "uniqueness_percentage": 0.31
+      },
+      {
+        "name": "product_width_cm",
+        "dtype": "Int64",
+        "null_count": 2,
+        "null_percentage": 0.01,
+        "unique_count": 96,
+        "uniqueness_percentage": 0.29
+      }
+    ]
+  },
+  {
+    "file_name": "olist_sellers_dataset.csv",
+    "file_size_bytes": 174703,
+    "row_count": 3095,
+    "column_count": 4,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "seller_id",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 3095,
+        "uniqueness_percentage": 100.0
+      },
+      {
+        "name": "seller_zip_code_prefix",
+        "dtype": "Int64",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 2246,
+        "uniqueness_percentage": 72.57
+      },
+      {
+        "name": "seller_city",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 611,
+        "uniqueness_percentage": 19.74
+      },
+      {
+        "name": "seller_state",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 23,
+        "uniqueness_percentage": 0.74
+      }
+    ]
+  },
+  {
+    "file_name": "product_category_name_translation.csv",
+    "file_size_bytes": 2613,
+    "row_count": 71,
+    "column_count": 2,
+    "duplicate_row_count": 0,
+    "columns": [
+      {
+        "name": "product_category_name",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 71,
+        "uniqueness_percentage": 100.0
+      },
+      {
+        "name": "product_category_name_english",
+        "dtype": "String",
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 71,
+        "uniqueness_percentage": 100.0
+      }
+    ]
+  }
+]
