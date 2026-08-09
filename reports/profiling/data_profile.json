@@ -1,0 +1,3323 @@
+{
+  "metadata": {
+    "generated_at_utc": "2026-08-09T08:22:47.968819+00:00",
+    "started_at_utc": "2026-08-09T08:22:40.152325+00:00",
+    "project": "Enterprise E-Commerce Analytics",
+    "tool": "Python + Polars",
+    "polars_version": "1.43.2",
+    "top_n_categories": 20,
+    "dataset_count": 9
+  },
+  "datasets": [
+    {
+      "file_name": "olist_customers_dataset.csv",
+      "file_size_bytes": 9033957,
+      "row_count": 99441,
+      "column_count": 5,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "customer_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 99441,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 99441,
+            "top_values": [
+              {
+                "value": "2cc0306551b1482603053de8ae5719fc",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "0068a2209e2c7631566539fef4331bf8",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "07268a96fa4f3812925fa07de7cc3c73",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "6063d231ad10ccc79c81b5799fc90a99",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "772bc39f945af45cdf5168ed7ffb5204",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "19f1753fcb718f9b763a0763e79ee15e",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "cbc03125dfd296354a81d5e64f7be0c6",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "7da7de34bdf57bec6ab555adf3c8a356",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "6f40052a8d45f8396c7446d4cea1826f",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "e4371087909eb38cac3ee6c09832006e",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "7bb5a75d4a412872fa774b56e05d0c38",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "9b393f101c2a58389bc8c804e560b284",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "3f7e2ff85b0210e92f5b1d447b687526",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "379a4be9ef9f203fbff2b2b6f686744f",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "68c0df96479bac8bc8aa0ceda8286a3b",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "dd3699c2c959c88bba5adfe97bc6331a",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "5165c38d7d20178e3fbc5cbef1961cf7",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "b8c900c65077ca9accd2e1132f863220",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "ed0ef83b84cca33b5d342c361846a265",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "f9be960abd2531a9b400e714b95ff1f9",
+                "count": 1,
+                "percentage": 0.001
+              }
+            ]
+          }
+        },
+        {
+          "name": "customer_unique_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 96096,
+          "unique_percentage": 96.6362,
+          "categorical": {
+            "unique_count": 96096,
+            "top_values": [
+              {
+                "value": "8d50f5eadf50201ccdcedfb9e2ac8455",
+                "count": 17,
+                "percentage": 0.0171
+              },
+              {
+                "value": "3e43e6105506432c953e165fb2acf44c",
+                "count": 9,
+                "percentage": 0.0091
+              },
+              {
+                "value": "ca77025e7201e3b30c44b472ff346268",
+                "count": 7,
+                "percentage": 0.007
+              },
+              {
+                "value": "6469f99c1f9dfae7733b25662e7f1782",
+                "count": 7,
+                "percentage": 0.007
+              },
+              {
+                "value": "1b6c7548a2a1f9037c1fd3ddfed95f33",
+                "count": 7,
+                "percentage": 0.007
+              },
+              {
+                "value": "de34b16117594161a6a89c50b289d35a",
+                "count": 6,
+                "percentage": 0.006
+              },
+              {
+                "value": "63cfc61cee11cbe306bff5857d00bfe4",
+                "count": 6,
+                "percentage": 0.006
+              },
+              {
+                "value": "12f5d6e1cbf93dafd9dcc19095df0b3d",
+                "count": 6,
+                "percentage": 0.006
+              },
+              {
+                "value": "dc813062e0fc23409cd255f7f53c7074",
+                "count": 6,
+                "percentage": 0.006
+              },
+              {
+                "value": "f0e310a6839dce9de1638e0fe5ab282a",
+                "count": 6,
+                "percentage": 0.006
+              },
+              {
+                "value": "47c1a3033b8b77b3ab6e109eb4d5fdf3",
+                "count": 6,
+                "percentage": 0.006
+              },
+              {
+                "value": "5e8f38a9a1c023f3db718edcf926a2db",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "394ac4de8f3acb14253c177f0e15bc58",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "74cb1ad7e6d5674325c1f99b5ea30d82",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "4e65032f1f574189fb793bac5a867bbc",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "fe81bb32c243a86b2f86fbf053fe6140",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "b4e4f24de1e8725b74e4a1f4975116ed",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "35ecdf6858edc6427223b64804cf028e",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "56c8638e7c058b98aae6d74d2dd6ea23",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "4facc2e6fbc2bffab2fea92d2b4aa7e4",
+                "count": 4,
+                "percentage": 0.004
+              }
+            ]
+          }
+        },
+        {
+          "name": "customer_zip_code_prefix",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 14994,
+          "unique_percentage": 15.0783,
+          "numeric": {
+            "min": 1003,
+            "max": 99990,
+            "mean": 35137.47458291851,
+            "median": 24416.0,
+            "std": 29797.93899620612,
+            "q1": 11347.0,
+            "q3": 58900.0,
+            "iqr": 47553.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 0,
+            "potential_outlier_percentage": 0.0
+          }
+        },
+        {
+          "name": "customer_city",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 4119,
+          "unique_percentage": 4.1422,
+          "categorical": {
+            "unique_count": 4119,
+            "top_values": [
+              {
+                "value": "sao paulo",
+                "count": 15540,
+                "percentage": 15.6274
+              },
+              {
+                "value": "rio de janeiro",
+                "count": 6882,
+                "percentage": 6.9207
+              },
+              {
+                "value": "belo horizonte",
+                "count": 2773,
+                "percentage": 2.7886
+              },
+              {
+                "value": "brasilia",
+                "count": 2131,
+                "percentage": 2.143
+              },
+              {
+                "value": "curitiba",
+                "count": 1521,
+                "percentage": 1.5296
+              },
+              {
+                "value": "campinas",
+                "count": 1444,
+                "percentage": 1.4521
+              },
+              {
+                "value": "porto alegre",
+                "count": 1379,
+                "percentage": 1.3868
+              },
+              {
+                "value": "salvador",
+                "count": 1245,
+                "percentage": 1.252
+              },
+              {
+                "value": "guarulhos",
+                "count": 1189,
+                "percentage": 1.1957
+              },
+              {
+                "value": "sao bernardo do campo",
+                "count": 938,
+                "percentage": 0.9433
+              },
+              {
+                "value": "niteroi",
+                "count": 849,
+                "percentage": 0.8538
+              },
+              {
+                "value": "santo andre",
+                "count": 797,
+                "percentage": 0.8015
+              },
+              {
+                "value": "osasco",
+                "count": 746,
+                "percentage": 0.7502
+              },
+              {
+                "value": "santos",
+                "count": 713,
+                "percentage": 0.717
+              },
+              {
+                "value": "goiania",
+                "count": 692,
+                "percentage": 0.6959
+              },
+              {
+                "value": "sao jose dos campos",
+                "count": 691,
+                "percentage": 0.6949
+              },
+              {
+                "value": "fortaleza",
+                "count": 654,
+                "percentage": 0.6577
+              },
+              {
+                "value": "sorocaba",
+                "count": 633,
+                "percentage": 0.6366
+              },
+              {
+                "value": "recife",
+                "count": 613,
+                "percentage": 0.6164
+              },
+              {
+                "value": "florianopolis",
+                "count": 570,
+                "percentage": 0.5732
+              }
+            ]
+          }
+        },
+        {
+          "name": "customer_state",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 27,
+          "unique_percentage": 0.0272,
+          "categorical": {
+            "unique_count": 27,
+            "top_values": [
+              {
+                "value": "SP",
+                "count": 41746,
+                "percentage": 41.9807
+              },
+              {
+                "value": "RJ",
+                "count": 12852,
+                "percentage": 12.9242
+              },
+              {
+                "value": "MG",
+                "count": 11635,
+                "percentage": 11.7004
+              },
+              {
+                "value": "RS",
+                "count": 5466,
+                "percentage": 5.4967
+              },
+              {
+                "value": "PR",
+                "count": 5045,
+                "percentage": 5.0734
+              },
+              {
+                "value": "SC",
+                "count": 3637,
+                "percentage": 3.6574
+              },
+              {
+                "value": "BA",
+                "count": 3380,
+                "percentage": 3.399
+              },
+              {
+                "value": "DF",
+                "count": 2140,
+                "percentage": 2.152
+              },
+              {
+                "value": "ES",
+                "count": 2033,
+                "percentage": 2.0444
+              },
+              {
+                "value": "GO",
+                "count": 2020,
+                "percentage": 2.0314
+              },
+              {
+                "value": "PE",
+                "count": 1652,
+                "percentage": 1.6613
+              },
+              {
+                "value": "CE",
+                "count": 1336,
+                "percentage": 1.3435
+              },
+              {
+                "value": "PA",
+                "count": 975,
+                "percentage": 0.9805
+              },
+              {
+                "value": "MT",
+                "count": 907,
+                "percentage": 0.9121
+              },
+              {
+                "value": "MA",
+                "count": 747,
+                "percentage": 0.7512
+              },
+              {
+                "value": "MS",
+                "count": 715,
+                "percentage": 0.719
+              },
+              {
+                "value": "PB",
+                "count": 536,
+                "percentage": 0.539
+              },
+              {
+                "value": "PI",
+                "count": 495,
+                "percentage": 0.4978
+              },
+              {
+                "value": "RN",
+                "count": 485,
+                "percentage": 0.4877
+              },
+              {
+                "value": "AL",
+                "count": 413,
+                "percentage": 0.4153
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_geolocation_dataset.csv",
+      "file_size_bytes": 61273883,
+      "row_count": 1000163,
+      "column_count": 5,
+      "duplicate_row_count": 261831,
+      "duplicate_row_percentage": 26.1788,
+      "columns": [
+        {
+          "name": "geolocation_zip_code_prefix",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 19015,
+          "unique_percentage": 1.9012,
+          "numeric": {
+            "min": 1001,
+            "max": 99990,
+            "mean": 36574.16646586607,
+            "median": 26530.0,
+            "std": 30549.335710319865,
+            "q1": 11075.0,
+            "q3": 63504.0,
+            "iqr": 52429.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 0,
+            "potential_outlier_percentage": 0.0
+          }
+        },
+        {
+          "name": "geolocation_lat",
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 717372,
+          "unique_percentage": 71.7255,
+          "numeric": {
+            "min": -36.6053744107061,
+            "max": 45.06593318269697,
+            "mean": -21.176152910383962,
+            "median": -22.91937749486411,
+            "std": 5.715866308822854,
+            "q1": -23.60354545628715,
+            "q3": -19.979613858733874,
+            "iqr": 3.623931597553277,
+            "zero_count": 0,
+            "negative_count": 998827,
+            "potential_outlier_count": 168240,
+            "potential_outlier_percentage": 16.8213
+          }
+        },
+        {
+          "name": "geolocation_lng",
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 717615,
+          "unique_percentage": 71.7498,
+          "numeric": {
+            "min": -101.46676644931476,
+            "max": 121.10539381057764,
+            "mean": -46.39054132093579,
+            "median": -46.637878669601484,
+            "std": 4.269748306619606,
+            "q1": -48.57313746109069,
+            "q3": -43.76770288045514,
+            "iqr": 4.8054345806355485,
+            "zero_count": 0,
+            "negative_count": 1000160,
+            "potential_outlier_count": 42348,
+            "potential_outlier_percentage": 4.2341
+          }
+        },
+        {
+          "name": "geolocation_city",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 8011,
+          "unique_percentage": 0.801,
+          "categorical": {
+            "unique_count": 8011,
+            "top_values": [
+              {
+                "value": "sao paulo",
+                "count": 135800,
+                "percentage": 13.5778
+              },
+              {
+                "value": "rio de janeiro",
+                "count": 62151,
+                "percentage": 6.2141
+              },
+              {
+                "value": "belo horizonte",
+                "count": 27805,
+                "percentage": 2.78
+              },
+              {
+                "value": "são paulo",
+                "count": 24918,
+                "percentage": 2.4914
+              },
+              {
+                "value": "curitiba",
+                "count": 16593,
+                "percentage": 1.659
+              },
+              {
+                "value": "porto alegre",
+                "count": 13521,
+                "percentage": 1.3519
+              },
+              {
+                "value": "salvador",
+                "count": 11865,
+                "percentage": 1.1863
+              },
+              {
+                "value": "guarulhos",
+                "count": 11340,
+                "percentage": 1.1338
+              },
+              {
+                "value": "brasilia",
+                "count": 10470,
+                "percentage": 1.0468
+              },
+              {
+                "value": "sao bernardo do campo",
+                "count": 8112,
+                "percentage": 0.8111
+              },
+              {
+                "value": "osasco",
+                "count": 7658,
+                "percentage": 0.7657
+              },
+              {
+                "value": "santo andre",
+                "count": 6863,
+                "percentage": 0.6862
+              },
+              {
+                "value": "niteroi",
+                "count": 6534,
+                "percentage": 0.6533
+              },
+              {
+                "value": "recife",
+                "count": 6168,
+                "percentage": 0.6167
+              },
+              {
+                "value": "goiania",
+                "count": 5661,
+                "percentage": 0.566
+              },
+              {
+                "value": "fortaleza",
+                "count": 5538,
+                "percentage": 0.5537
+              },
+              {
+                "value": "campinas",
+                "count": 5479,
+                "percentage": 0.5478
+              },
+              {
+                "value": "sorocaba",
+                "count": 5361,
+                "percentage": 0.536
+              },
+              {
+                "value": "santos",
+                "count": 5000,
+                "percentage": 0.4999
+              },
+              {
+                "value": "barueri",
+                "count": 4971,
+                "percentage": 0.497
+              }
+            ]
+          }
+        },
+        {
+          "name": "geolocation_state",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 27,
+          "unique_percentage": 0.0027,
+          "categorical": {
+            "unique_count": 27,
+            "top_values": [
+              {
+                "value": "SP",
+                "count": 404268,
+                "percentage": 40.4202
+              },
+              {
+                "value": "MG",
+                "count": 126336,
+                "percentage": 12.6315
+              },
+              {
+                "value": "RJ",
+                "count": 121169,
+                "percentage": 12.1149
+              },
+              {
+                "value": "RS",
+                "count": 61851,
+                "percentage": 6.1841
+              },
+              {
+                "value": "PR",
+                "count": 57859,
+                "percentage": 5.785
+              },
+              {
+                "value": "SC",
+                "count": 38328,
+                "percentage": 3.8322
+              },
+              {
+                "value": "BA",
+                "count": 36045,
+                "percentage": 3.6039
+              },
+              {
+                "value": "GO",
+                "count": 20139,
+                "percentage": 2.0136
+              },
+              {
+                "value": "ES",
+                "count": 16748,
+                "percentage": 1.6745
+              },
+              {
+                "value": "PE",
+                "count": 16432,
+                "percentage": 1.6429
+              },
+              {
+                "value": "DF",
+                "count": 12986,
+                "percentage": 1.2984
+              },
+              {
+                "value": "MT",
+                "count": 12031,
+                "percentage": 1.2029
+              },
+              {
+                "value": "CE",
+                "count": 11674,
+                "percentage": 1.1672
+              },
+              {
+                "value": "PA",
+                "count": 10853,
+                "percentage": 1.0851
+              },
+              {
+                "value": "MS",
+                "count": 10431,
+                "percentage": 1.0429
+              },
+              {
+                "value": "MA",
+                "count": 7853,
+                "percentage": 0.7852
+              },
+              {
+                "value": "PB",
+                "count": 5538,
+                "percentage": 0.5537
+              },
+              {
+                "value": "RN",
+                "count": 5041,
+                "percentage": 0.504
+              },
+              {
+                "value": "PI",
+                "count": 4549,
+                "percentage": 0.4548
+              },
+              {
+                "value": "AL",
+                "count": 4183,
+                "percentage": 0.4182
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_order_items_dataset.csv",
+      "file_size_bytes": 15438671,
+      "row_count": 112650,
+      "column_count": 7,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "order_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 98666,
+          "unique_percentage": 87.5863,
+          "categorical": {
+            "unique_count": 98666,
+            "top_values": [
+              {
+                "value": "8272b63d03f5f79c56e9e4120aec44ef",
+                "count": 21,
+                "percentage": 0.0186
+              },
+              {
+                "value": "ab14fdcfbe524636d65ee38360e22ce8",
+                "count": 20,
+                "percentage": 0.0178
+              },
+              {
+                "value": "1b15974a0141d54e36626dca3fdc731a",
+                "count": 20,
+                "percentage": 0.0178
+              },
+              {
+                "value": "428a2f660dc84138d969ccd69a0ab6d5",
+                "count": 15,
+                "percentage": 0.0133
+              },
+              {
+                "value": "9ef13efd6949e4573a18964dd1bbe7f5",
+                "count": 15,
+                "percentage": 0.0133
+              },
+              {
+                "value": "9bdc4d4c71aa1de4606060929dee888c",
+                "count": 14,
+                "percentage": 0.0124
+              },
+              {
+                "value": "73c8ab38f07dc94389065f7eba4f297a",
+                "count": 14,
+                "percentage": 0.0124
+              },
+              {
+                "value": "37ee401157a3a0b28c9c6d0ed8c3b24b",
+                "count": 13,
+                "percentage": 0.0115
+              },
+              {
+                "value": "637617b3ffe9e2f7a2411243829226d0",
+                "count": 12,
+                "percentage": 0.0107
+              },
+              {
+                "value": "af822dacd6f5cff7376413c03a388bb7",
+                "count": 12,
+                "percentage": 0.0107
+              },
+              {
+                "value": "3a213fcdfe7d98be74ea0dc05a8b31ae",
+                "count": 12,
+                "percentage": 0.0107
+              },
+              {
+                "value": "2c2a19b5703863c908512d135aa6accc",
+                "count": 12,
+                "percentage": 0.0107
+              },
+              {
+                "value": "c05d6a79e55da72ca780ce90364abed9",
+                "count": 12,
+                "percentage": 0.0107
+              },
+              {
+                "value": "6c355e2913545fa6f72c40cbca57729e",
+                "count": 11,
+                "percentage": 0.0098
+              },
+              {
+                "value": "7f2c22c54cbae55091a09a9653fd2b8a",
+                "count": 11,
+                "percentage": 0.0098
+              },
+              {
+                "value": "71dab1155600756af6de79de92e712e3",
+                "count": 11,
+                "percentage": 0.0098
+              },
+              {
+                "value": "5a3b1c29a49756e75f1ef513383c0c12",
+                "count": 11,
+                "percentage": 0.0098
+              },
+              {
+                "value": "9aec4e1ae90b23c7bf2d2b3bfafbd943",
+                "count": 10,
+                "percentage": 0.0089
+              },
+              {
+                "value": "30bdf3d824d824610a49887486debcaf",
+                "count": 10,
+                "percentage": 0.0089
+              },
+              {
+                "value": "f60ce04ff8060152c83c7c97e246d6a8",
+                "count": 10,
+                "percentage": 0.0089
+              }
+            ]
+          }
+        },
+        {
+          "name": "order_item_id",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 21,
+          "unique_percentage": 0.0186,
+          "numeric": {
+            "min": 1,
+            "max": 21,
+            "mean": 1.1978339991122948,
+            "median": 1.0,
+            "std": 0.7051240313951732,
+            "q1": 1.0,
+            "q3": 1.0,
+            "iqr": 0.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 13984,
+            "potential_outlier_percentage": 12.4137
+          }
+        },
+        {
+          "name": "product_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 32951,
+          "unique_percentage": 29.2508,
+          "categorical": {
+            "unique_count": 32951,
+            "top_values": [
+              {
+                "value": "aca2eb7d00ea1a7b8ebd4e68314663af",
+                "count": 527,
+                "percentage": 0.4678
+              },
+              {
+                "value": "99a4788cb24856965c36a24e339b6058",
+                "count": 488,
+                "percentage": 0.4332
+              },
+              {
+                "value": "422879e10f46682990de24d770e7f83d",
+                "count": 484,
+                "percentage": 0.4296
+              },
+              {
+                "value": "389d119b48cf3043d311335e499d9c6b",
+                "count": 392,
+                "percentage": 0.348
+              },
+              {
+                "value": "368c6c730842d78016ad823897a372db",
+                "count": 388,
+                "percentage": 0.3444
+              },
+              {
+                "value": "53759a2ecddad2bb87a079a1f1519f73",
+                "count": 373,
+                "percentage": 0.3311
+              },
+              {
+                "value": "d1c427060a0f73f6b889a5c7c61f2ac4",
+                "count": 343,
+                "percentage": 0.3045
+              },
+              {
+                "value": "53b36df67ebb7c41585e8d54d6772e08",
+                "count": 323,
+                "percentage": 0.2867
+              },
+              {
+                "value": "154e7e31ebfa092203795c972e5804a6",
+                "count": 281,
+                "percentage": 0.2494
+              },
+              {
+                "value": "3dd2a17168ec895c781a9191c1e95ad7",
+                "count": 274,
+                "percentage": 0.2432
+              },
+              {
+                "value": "2b4609f8948be18874494203496bc318",
+                "count": 260,
+                "percentage": 0.2308
+              },
+              {
+                "value": "7c1bd920dbdf22470b68bde975dd3ccf",
+                "count": 231,
+                "percentage": 0.2051
+              },
+              {
+                "value": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+                "count": 226,
+                "percentage": 0.2006
+              },
+              {
+                "value": "5a848e4ab52fd5445cdc07aab1c40e48",
+                "count": 197,
+                "percentage": 0.1749
+              },
+              {
+                "value": "bb50f2e236e5eea0100680137654686c",
+                "count": 195,
+                "percentage": 0.1731
+              },
+              {
+                "value": "e0d64dcfaa3b6db5c54ca298ae101d05",
+                "count": 194,
+                "percentage": 0.1722
+              },
+              {
+                "value": "e53e557d5a159f5aa2c5e995dfdf244b",
+                "count": 183,
+                "percentage": 0.1625
+              },
+              {
+                "value": "42a2c92a0979a949ca4ea89ec5c7b934",
+                "count": 183,
+                "percentage": 0.1625
+              },
+              {
+                "value": "b532349fe46b38fbc7bb3914c1bdae07",
+                "count": 169,
+                "percentage": 0.15
+              },
+              {
+                "value": "35afc973633aaeb6b877ff57b2793310",
+                "count": 165,
+                "percentage": 0.1465
+              }
+            ]
+          }
+        },
+        {
+          "name": "seller_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 3095,
+          "unique_percentage": 2.7474,
+          "categorical": {
+            "unique_count": 3095,
+            "top_values": [
+              {
+                "value": "6560211a19b47992c3666cc44a7e94c0",
+                "count": 2033,
+                "percentage": 1.8047
+              },
+              {
+                "value": "4a3ca9315b744ce9f8e9374361493884",
+                "count": 1987,
+                "percentage": 1.7639
+              },
+              {
+                "value": "1f50f920176fa81dab994f9023523100",
+                "count": 1931,
+                "percentage": 1.7142
+              },
+              {
+                "value": "cc419e0650a3c5ba77189a1882b7556a",
+                "count": 1775,
+                "percentage": 1.5757
+              },
+              {
+                "value": "da8622b14eb17ae2831f4ac5b9dab84a",
+                "count": 1551,
+                "percentage": 1.3768
+              },
+              {
+                "value": "955fee9216a65b617aa5c0531780ce60",
+                "count": 1499,
+                "percentage": 1.3307
+              },
+              {
+                "value": "1025f0e2d44d7041d6cf58b6550e0bfa",
+                "count": 1428,
+                "percentage": 1.2676
+              },
+              {
+                "value": "7c67e1448b00f6e969d365cea6b010ab",
+                "count": 1364,
+                "percentage": 1.2108
+              },
+              {
+                "value": "ea8482cd71df3c1969d7b9473ff13abc",
+                "count": 1203,
+                "percentage": 1.0679
+              },
+              {
+                "value": "7a67c85e85bb2ce8582c35f2203ad736",
+                "count": 1171,
+                "percentage": 1.0395
+              },
+              {
+                "value": "4869f7a5dfa277a7dca6462dcf3b52b2",
+                "count": 1156,
+                "percentage": 1.0262
+              },
+              {
+                "value": "3d871de0142ce09b7081e2b9d1733cb1",
+                "count": 1147,
+                "percentage": 1.0182
+              },
+              {
+                "value": "8b321bb669392f5163d04c59e235e066",
+                "count": 1018,
+                "percentage": 0.9037
+              },
+              {
+                "value": "cca3071e3e9bb7d12640c9fbe2301306",
+                "count": 830,
+                "percentage": 0.7368
+              },
+              {
+                "value": "620c87c171fb2a6dd6e8bb4dec959fc6",
+                "count": 798,
+                "percentage": 0.7084
+              },
+              {
+                "value": "a1043bafd471dff536d0c462352beb48",
+                "count": 770,
+                "percentage": 0.6835
+              },
+              {
+                "value": "e9779976487b77c6d4ac45f75ec7afe9",
+                "count": 750,
+                "percentage": 0.6658
+              },
+              {
+                "value": "f8db351d8c4c4c22c6835c19a46f01b0",
+                "count": 724,
+                "percentage": 0.6427
+              },
+              {
+                "value": "d2374cbcbb3ca4ab1086534108cc3ab7",
+                "count": 631,
+                "percentage": 0.5601
+              },
+              {
+                "value": "391fc6631aebcf3004804e51b40bcf1e",
+                "count": 613,
+                "percentage": 0.5442
+              }
+            ]
+          }
+        },
+        {
+          "name": "shipping_limit_date",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 93318,
+          "unique_percentage": 82.8389,
+          "temporal": {
+            "min": "2016-09-19T00:15:34",
+            "max": "2020-04-09T22:35:08",
+            "null_count": 0,
+            "invalid_count": 0
+          }
+        },
+        {
+          "name": "price",
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 5968,
+          "unique_percentage": 5.2978,
+          "numeric": {
+            "min": 0.85,
+            "max": 6735.0,
+            "mean": 120.65373901464716,
+            "median": 74.99,
+            "std": 183.6339280502594,
+            "q1": 39.9,
+            "q3": 134.9,
+            "iqr": 95.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 8427,
+            "potential_outlier_percentage": 7.4807
+          }
+        },
+        {
+          "name": "freight_value",
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 6999,
+          "unique_percentage": 6.213,
+          "numeric": {
+            "min": 0.0,
+            "max": 409.68,
+            "mean": 19.990319928983578,
+            "median": 16.26,
+            "std": 15.806405412297085,
+            "q1": 13.08,
+            "q3": 21.15,
+            "iqr": 8.069999999999999,
+            "zero_count": 383,
+            "negative_count": 0,
+            "potential_outlier_count": 12134,
+            "potential_outlier_percentage": 10.7714
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_order_payments_dataset.csv",
+      "file_size_bytes": 5777138,
+      "row_count": 103886,
+      "column_count": 5,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "order_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 99440,
+          "unique_percentage": 95.7203,
+          "categorical": {
+            "unique_count": 99440,
+            "top_values": [
+              {
+                "value": "fa65dad1b0e818e3ccc5cb0e39231352",
+                "count": 29,
+                "percentage": 0.0279
+              },
+              {
+                "value": "ccf804e764ed5650cd8759557269dc13",
+                "count": 26,
+                "percentage": 0.025
+              },
+              {
+                "value": "285c2e15bebd4ac83635ccc563dc71f4",
+                "count": 22,
+                "percentage": 0.0212
+              },
+              {
+                "value": "895ab968e7bb0d5659d16cd74cd1650c",
+                "count": 21,
+                "percentage": 0.0202
+              },
+              {
+                "value": "ee9ca989fc93ba09a6eddc250ce01742",
+                "count": 19,
+                "percentage": 0.0183
+              },
+              {
+                "value": "fedcd9f7ccdc8cba3a18defedd1a5547",
+                "count": 19,
+                "percentage": 0.0183
+              },
+              {
+                "value": "21577126c19bf11a0b91592e5844ba78",
+                "count": 15,
+                "percentage": 0.0144
+              },
+              {
+                "value": "4bfcba9e084f46c8e3cb49b0fa6e6159",
+                "count": 15,
+                "percentage": 0.0144
+              },
+              {
+                "value": "3c58bffb70dcf45f12bdf66a3c215905",
+                "count": 14,
+                "percentage": 0.0135
+              },
+              {
+                "value": "4689b1816de42507a7d63a4617383c59",
+                "count": 14,
+                "percentage": 0.0135
+              },
+              {
+                "value": "4fb76fa13b108a0d0478483421b0992c",
+                "count": 13,
+                "percentage": 0.0125
+              },
+              {
+                "value": "73df5d6adbeea12c8ae03df93f346e86",
+                "count": 13,
+                "percentage": 0.0125
+              },
+              {
+                "value": "cf101c3abd3c061ca9f78c1bbb1125af",
+                "count": 13,
+                "percentage": 0.0125
+              },
+              {
+                "value": "67d83bd36ec2c7fb557742fb58837659",
+                "count": 12,
+                "percentage": 0.0116
+              },
+              {
+                "value": "1a611328643ae11146ba09a4425d2e12",
+                "count": 12,
+                "percentage": 0.0116
+              },
+              {
+                "value": "1d9a9731b9c10fc9cba74e6f74782e8b",
+                "count": 12,
+                "percentage": 0.0116
+              },
+              {
+                "value": "d744783ed2ace06cac647a9e64dcbcfd",
+                "count": 12,
+                "percentage": 0.0116
+              },
+              {
+                "value": "c6492b842ac190db807c15aff21a7dd6",
+                "count": 12,
+                "percentage": 0.0116
+              },
+              {
+                "value": "6d58638e32674bebee793a47ac4cbadc",
+                "count": 12,
+                "percentage": 0.0116
+              },
+              {
+                "value": "465c2e1bee4561cb39e0db8c5993aafc",
+                "count": 12,
+                "percentage": 0.0116
+              }
+            ]
+          }
+        },
+        {
+          "name": "payment_sequential",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 29,
+          "unique_percentage": 0.0279,
+          "numeric": {
+            "min": 1,
+            "max": 29,
+            "mean": 1.0926785129853878,
+            "median": 1.0,
+            "std": 0.7065837791949956,
+            "q1": 1.0,
+            "q3": 1.0,
+            "iqr": 0.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 4526,
+            "potential_outlier_percentage": 4.3567
+          }
+        },
+        {
+          "name": "payment_type",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 5,
+          "unique_percentage": 0.0048,
+          "categorical": {
+            "unique_count": 5,
+            "top_values": [
+              {
+                "value": "credit_card",
+                "count": 76795,
+                "percentage": 73.9224
+              },
+              {
+                "value": "boleto",
+                "count": 19784,
+                "percentage": 19.044
+              },
+              {
+                "value": "voucher",
+                "count": 5775,
+                "percentage": 5.559
+              },
+              {
+                "value": "debit_card",
+                "count": 1529,
+                "percentage": 1.4718
+              },
+              {
+                "value": "not_defined",
+                "count": 3,
+                "percentage": 0.0029
+              }
+            ]
+          }
+        },
+        {
+          "name": "payment_installments",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 24,
+          "unique_percentage": 0.0231,
+          "numeric": {
+            "min": 0,
+            "max": 24,
+            "mean": 2.853348863176944,
+            "median": 1.0,
+            "std": 2.687050673856479,
+            "q1": 1.0,
+            "q3": 4.0,
+            "iqr": 3.0,
+            "zero_count": 2,
+            "negative_count": 0,
+            "potential_outlier_count": 6313,
+            "potential_outlier_percentage": 6.0769
+          }
+        },
+        {
+          "name": "payment_value",
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 29077,
+          "unique_percentage": 27.9893,
+          "numeric": {
+            "min": 0.0,
+            "max": 13664.08,
+            "mean": 154.1003804169955,
+            "median": 100.0,
+            "std": 217.49406386472435,
+            "q1": 56.79,
+            "q3": 171.84,
+            "iqr": 115.05000000000001,
+            "zero_count": 9,
+            "negative_count": 0,
+            "potential_outlier_count": 7981,
+            "potential_outlier_percentage": 7.6825
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_order_reviews_dataset.csv",
+      "file_size_bytes": 14451670,
+      "row_count": 99224,
+      "column_count": 7,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "review_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 98410,
+          "unique_percentage": 99.1796,
+          "categorical": {
+            "unique_count": 98410,
+            "top_values": [
+              {
+                "value": "9e25d6e3025e9b9a0fc7f03588d33e2b",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "0c76e7a547a531e7bf9f0b99cba071c1",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "dbdf1ea31790c8ecfcc6750525661a9b",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "69a1068c3128a14994e3e422e4539e04",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "08528f70f579f0c830189efc523d2182",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "4219a80ab469e3fc9901437b73da3f75",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "e44840754f12fad2b8646712121b349a",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "44e9f871226d8a130de3fc39dfbdf0c5",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "2d6ac45f859465b5c185274a1c929637",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "1fb4ddc969e6bea80e38deec00393a6f",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "f4bb9d6dd4fb6dcc2298f0e7b17b8e1e",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "4d0e6dd087008d1f992d25ef6e1f619f",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "ddc52555ca27b0fe67d5255147682d2d",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "7b606b0d57b078384f0b58eac1d41d78",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "3415c9f764e478409e8e0660ae816dd2",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "832acec9bbf4efe65c3fb6423d8b4ed7",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "38821b5c496b678cf91acc34892805ad",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "2172867fd5b1a55f98fe4608e1547b4b",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "308316408775d1600dad81bd3184556d",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "4548534449b1f572e357211b90724f1b",
+                "count": 3,
+                "percentage": 0.003
+              }
+            ]
+          }
+        },
+        {
+          "name": "order_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 98673,
+          "unique_percentage": 99.4447,
+          "categorical": {
+            "unique_count": 98673,
+            "top_values": [
+              {
+                "value": "03c939fd7fd3b38f8485a0f95798f1f6",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "8e17072ec97ce29f0e1f111e598b0c85",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "df56136b8031ecd28e200bb18e6ddb2e",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "c88b1d1b157a9999ce368f218a407141",
+                "count": 3,
+                "percentage": 0.003
+              },
+              {
+                "value": "6540a36b3dd6a4a0922d5f57d493d9d6",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "60058a96e9d74aba1c66b86edbd0535e",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "21cb4961399b846b168d0358100f473b",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "6318d8c5f6857de384c0b3186d036457",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "4082016610cd8b53add011fe068c04b3",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "8a9dffcf22392c73f48cc12ad332af30",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "dab8a6c6bd6ec448df5b3a6b6cb887bc",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "a07c319b821b5707ba0b018c7ad63aef",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "2acfdc5131ff2cf4433e668454c9784c",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "7ceb3c8bbf48eaa776064d56012afbc1",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "677cebcf344bca22b07250e7548bd8bc",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "ba89a3d7d01c8a2a0bbdb514a851e9f1",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "cb1aefa2e40fed6fb68c34d30e3c0e7c",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "468edfd1aeeeef023e6bba4943f2cdfb",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "06b2c7035561ef12b16045ef4bf459e2",
+                "count": 2,
+                "percentage": 0.002
+              },
+              {
+                "value": "d61b915b69851aec8a8865f36cfd793e",
+                "count": 2,
+                "percentage": 0.002
+              }
+            ]
+          }
+        },
+        {
+          "name": "review_score",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 5,
+          "unique_percentage": 0.005,
+          "numeric": {
+            "min": 1,
+            "max": 5,
+            "mean": 4.08642062404257,
+            "median": 5.0,
+            "std": 1.3475791311150984,
+            "q1": 4.0,
+            "q3": 5.0,
+            "iqr": 1.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 14575,
+            "potential_outlier_percentage": 14.689
+          }
+        },
+        {
+          "name": "review_comment_title",
+          "dtype": "String",
+          "null_count": 87656,
+          "null_percentage": 88.3415,
+          "unique_count": 4528,
+          "unique_percentage": 4.5634,
+          "categorical": {
+            "unique_count": 4528,
+            "top_values": [
+              {
+                "value": "Recomendo",
+                "count": 423,
+                "percentage": 3.6566
+              },
+              {
+                "value": "recomendo",
+                "count": 345,
+                "percentage": 2.9824
+              },
+              {
+                "value": "Bom",
+                "count": 293,
+                "percentage": 2.5328
+              },
+              {
+                "value": "super recomendo",
+                "count": 270,
+                "percentage": 2.334
+              },
+              {
+                "value": "Excelente",
+                "count": 248,
+                "percentage": 2.1438
+              },
+              {
+                "value": "Muito bom",
+                "count": 247,
+                "percentage": 2.1352
+              },
+              {
+                "value": "Ótimo",
+                "count": 240,
+                "percentage": 2.0747
+              },
+              {
+                "value": "Super recomendo",
+                "count": 217,
+                "percentage": 1.8759
+              },
+              {
+                "value": "Ótimo ",
+                "count": 207,
+                "percentage": 1.7894
+              },
+              {
+                "value": "Otimo",
+                "count": 174,
+                "percentage": 1.5041
+              },
+              {
+                "value": "10",
+                "count": 158,
+                "percentage": 1.3658
+              },
+              {
+                "value": "Excelente ",
+                "count": 119,
+                "percentage": 1.0287
+              },
+              {
+                "value": "otimo",
+                "count": 105,
+                "percentage": 0.9077
+              },
+              {
+                "value": "bom",
+                "count": 97,
+                "percentage": 0.8385
+              },
+              {
+                "value": "Muito bom ",
+                "count": 87,
+                "percentage": 0.7521
+              },
+              {
+                "value": "Boa",
+                "count": 86,
+                "percentage": 0.7434
+              },
+              {
+                "value": "Recomendo ",
+                "count": 62,
+                "percentage": 0.536
+              },
+              {
+                "value": "Perfeito",
+                "count": 57,
+                "percentage": 0.4927
+              },
+              {
+                "value": "Ótima",
+                "count": 55,
+                "percentage": 0.4754
+              },
+              {
+                "value": "RECOMENDO",
+                "count": 55,
+                "percentage": 0.4754
+              }
+            ]
+          }
+        },
+        {
+          "name": "review_comment_message",
+          "dtype": "String",
+          "null_count": 58247,
+          "null_percentage": 58.7025,
+          "unique_count": 36160,
+          "unique_percentage": 36.4428,
+          "categorical": {
+            "unique_count": 36160,
+            "top_values": [
+              {
+                "value": "Muito bom",
+                "count": 230,
+                "percentage": 0.5613
+              },
+              {
+                "value": "Bom",
+                "count": 189,
+                "percentage": 0.4612
+              },
+              {
+                "value": "muito bom",
+                "count": 122,
+                "percentage": 0.2977
+              },
+              {
+                "value": "bom",
+                "count": 107,
+                "percentage": 0.2611
+              },
+              {
+                "value": "Recomendo",
+                "count": 100,
+                "percentage": 0.244
+              },
+              {
+                "value": "Otimo",
+                "count": 99,
+                "percentage": 0.2416
+              },
+              {
+                "value": "otimo",
+                "count": 96,
+                "percentage": 0.2343
+              },
+              {
+                "value": "Ótimo",
+                "count": 77,
+                "percentage": 0.1879
+              },
+              {
+                "value": "Ótimo ",
+                "count": 74,
+                "percentage": 0.1806
+              },
+              {
+                "value": "Ok",
+                "count": 72,
+                "percentage": 0.1757
+              },
+              {
+                "value": "Excelente",
+                "count": 71,
+                "percentage": 0.1733
+              },
+              {
+                "value": "Muito bom ",
+                "count": 66,
+                "percentage": 0.1611
+              },
+              {
+                "value": "recomendo",
+                "count": 65,
+                "percentage": 0.1586
+              },
+              {
+                "value": "ok",
+                "count": 55,
+                "percentage": 0.1342
+              },
+              {
+                "value": ".",
+                "count": 51,
+                "percentage": 0.1245
+              },
+              {
+                "value": "Recomendo ",
+                "count": 50,
+                "percentage": 0.122
+              },
+              {
+                "value": "Boa",
+                "count": 47,
+                "percentage": 0.1147
+              },
+              {
+                "value": "Tudo ok",
+                "count": 45,
+                "percentage": 0.1098
+              },
+              {
+                "value": "Ótimo produto",
+                "count": 44,
+                "percentage": 0.1074
+              },
+              {
+                "value": "Gostei",
+                "count": 37,
+                "percentage": 0.0903
+              }
+            ]
+          }
+        },
+        {
+          "name": "review_creation_date",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 636,
+          "unique_percentage": 0.641,
+          "temporal": {
+            "min": "2016-10-02T00:00:00",
+            "max": "2018-08-31T00:00:00",
+            "null_count": 0,
+            "invalid_count": 0
+          }
+        },
+        {
+          "name": "review_answer_timestamp",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 98248,
+          "unique_percentage": 99.0164,
+          "temporal": {
+            "min": "2016-10-07T18:32:28",
+            "max": "2018-10-29T12:27:35",
+            "null_count": 0,
+            "invalid_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_orders_dataset.csv",
+      "file_size_bytes": 17654914,
+      "row_count": 99441,
+      "column_count": 8,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "order_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 99441,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 99441,
+            "top_values": [
+              {
+                "value": "c11a68c413a5bab666d3afe5a3ed7ef5",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "2067e6809c31a615c37a470db2e6bf89",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "09dbda42baac941ca241f8cea65b2306",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "b4ce0b4c7e26857f771d381adf9bb7de",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "059bbeb3477ed66fd7e670c3f879009a",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "6161a508b482a6f6cd50ac0449759706",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "6afee35d4619c0d99cbf16d1e4e461eb",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "b69b78a1865e7b379d633794c80ef7d2",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "76fa5079bacbb2380a971adbbc40676f",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "d397f6505bb5680eb194ec739c34f217",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "60cb9171ec9aac65b572bf0486ff8751",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "7c0ce5e0916d0bca80839ea19d6112c7",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "35ef29f36793696d79c36f7780a40dab",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "08c7d364923b6238c246df0fab24d907",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "eb4194a9e5d967e208c0fa8fd834cf0a",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "d1d889b705a1d015ae3040fe1cb24be7",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "fc719b274382a0834f125796832ab9a5",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "17bc0acf9f5ac57fc41fb222543c3c46",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "befae3252c7f7ffb6abdeb4d3f4eb668",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "18e9c9a8bc880b4b3aeafede031f7587",
+                "count": 1,
+                "percentage": 0.001
+              }
+            ]
+          }
+        },
+        {
+          "name": "customer_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 99441,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 99441,
+            "top_values": [
+              {
+                "value": "72aec8b08542b4ad46dc664e1a0c69c0",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "7c5d723b7fb0e3e9d244d0e83e1e2aec",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "ec31fd62f972a172d6321f943ca34bc7",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "509466c13cf576e803ed0a1a39cc0792",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "40ada5e3dc4b3c488f9367c4ba39727a",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "1a2e27ad78a8c2a582a8f29b851a0c13",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "dabc9bb54f1babd380fe2b76f0e7e471",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "f6f76301950a9f0c4099483fa35b0292",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "804e241e3524d0d28096ca515f29972c",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "32f739c8fd212a33fe7598777b9cd503",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "90d085beb31a53755eaa68a64d3dc5a5",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "52d38a48fdc7bb2e1fc458489a96dc2a",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "7d58157ef9ab184d29d36f009c7ad786",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "31f9366e8fbe2412ddbae2d9c49d8adf",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "37c117383b391157a1e253b395d73cee",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "d1774572040fe4b9081e1abcc26f0783",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "e91aacb44859273903170c37d0b8cdd7",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "ca98f9d0b9cd527137b99812c0e0b918",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "b909a43dbe785f180ae31c4d0e79cd28",
+                "count": 1,
+                "percentage": 0.001
+              },
+              {
+                "value": "ab0c7372cfc8072894f5c0aa01585e32",
+                "count": 1,
+                "percentage": 0.001
+              }
+            ]
+          }
+        },
+        {
+          "name": "order_status",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 8,
+          "unique_percentage": 0.008,
+          "categorical": {
+            "unique_count": 8,
+            "top_values": [
+              {
+                "value": "delivered",
+                "count": 96478,
+                "percentage": 97.0203
+              },
+              {
+                "value": "shipped",
+                "count": 1107,
+                "percentage": 1.1132
+              },
+              {
+                "value": "canceled",
+                "count": 625,
+                "percentage": 0.6285
+              },
+              {
+                "value": "unavailable",
+                "count": 609,
+                "percentage": 0.6124
+              },
+              {
+                "value": "invoiced",
+                "count": 314,
+                "percentage": 0.3158
+              },
+              {
+                "value": "processing",
+                "count": 301,
+                "percentage": 0.3027
+              },
+              {
+                "value": "created",
+                "count": 5,
+                "percentage": 0.005
+              },
+              {
+                "value": "approved",
+                "count": 2,
+                "percentage": 0.002
+              }
+            ]
+          }
+        },
+        {
+          "name": "order_purchase_timestamp",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 98875,
+          "unique_percentage": 99.4308,
+          "temporal": {
+            "min": "2016-09-04T21:15:19",
+            "max": "2018-10-17T17:30:18",
+            "null_count": 0,
+            "invalid_count": 0
+          }
+        },
+        {
+          "name": "order_approved_at",
+          "dtype": "String",
+          "null_count": 160,
+          "null_percentage": 0.1609,
+          "unique_count": 90734,
+          "unique_percentage": 91.2441,
+          "temporal": {
+            "min": "2016-09-15T12:16:38",
+            "max": "2018-09-03T17:40:06",
+            "null_count": 160,
+            "invalid_count": 0
+          }
+        },
+        {
+          "name": "order_delivered_carrier_date",
+          "dtype": "String",
+          "null_count": 1783,
+          "null_percentage": 1.793,
+          "unique_count": 81019,
+          "unique_percentage": 81.4744,
+          "temporal": {
+            "min": "2016-10-08T10:34:01",
+            "max": "2018-09-11T19:48:28",
+            "null_count": 1783,
+            "invalid_count": 0
+          }
+        },
+        {
+          "name": "order_delivered_customer_date",
+          "dtype": "String",
+          "null_count": 2965,
+          "null_percentage": 2.9817,
+          "unique_count": 95665,
+          "unique_percentage": 96.2028,
+          "temporal": {
+            "min": "2016-10-11T13:46:32",
+            "max": "2018-10-17T13:22:46",
+            "null_count": 2965,
+            "invalid_count": 0
+          }
+        },
+        {
+          "name": "order_estimated_delivery_date",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 459,
+          "unique_percentage": 0.4616,
+          "temporal": {
+            "min": "2016-09-30T00:00:00",
+            "max": "2018-11-12T00:00:00",
+            "null_count": 0,
+            "invalid_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_products_dataset.csv",
+      "file_size_bytes": 2379446,
+      "row_count": 32951,
+      "column_count": 9,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "product_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 32951,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 32951,
+            "top_values": [
+              {
+                "value": "4a1fceb27ddd81536c58bb333459b07c",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "ca53753a29adfe8acad27ebef2eef9fb",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "8d2b53933a7aae1c8bfc6391385dc069",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "8b78fb97dfb22b6e0e32d34284716d91",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "1a41f6016e828ff1d37f2ecc2f2a0dfd",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "a0cf997ca06fc964e6c1f03d9a5e7752",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "dc363002c653f0cdc77f9d0be45fa103",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "d41a23bd2bc3ec10cfffc66c0611a290",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "d56781dd9e632e4460c10d95167e5840",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "d0c118c2509abde6fdad3d7bac3ebef5",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "d177efa9bee6dfa421c10f7b1bcf51c7",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "8ebb3f77fca7f2ec3283f8850ac55a15",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "d063fc697e5aa468ad1e689d5e6028fd",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "fd2168a1a9661512d53cb23d6d23ee02",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "1b46816aa838ce9ae97feda7b2f51f26",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "37cc5883abe2ac5703f1cfa3a9ec41c0",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "4fb651ace30be388c0e95f48f3308e5a",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "8e070d077d43019c6ab43765f69d8401",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "f81b171b346c639cb5a7cbab8dfac7c4",
+                "count": 1,
+                "percentage": 0.003
+              },
+              {
+                "value": "b101b46755d3037cfa56b29f72e11a19",
+                "count": 1,
+                "percentage": 0.003
+              }
+            ]
+          }
+        },
+        {
+          "name": "product_category_name",
+          "dtype": "String",
+          "null_count": 610,
+          "null_percentage": 1.8512,
+          "unique_count": 74,
+          "unique_percentage": 0.2246,
+          "categorical": {
+            "unique_count": 74,
+            "top_values": [
+              {
+                "value": "cama_mesa_banho",
+                "count": 3029,
+                "percentage": 9.3658
+              },
+              {
+                "value": "esporte_lazer",
+                "count": 2867,
+                "percentage": 8.8649
+              },
+              {
+                "value": "moveis_decoracao",
+                "count": 2657,
+                "percentage": 8.2156
+              },
+              {
+                "value": "beleza_saude",
+                "count": 2444,
+                "percentage": 7.557
+              },
+              {
+                "value": "utilidades_domesticas",
+                "count": 2335,
+                "percentage": 7.2199
+              },
+              {
+                "value": "automotivo",
+                "count": 1900,
+                "percentage": 5.8749
+              },
+              {
+                "value": "informatica_acessorios",
+                "count": 1639,
+                "percentage": 5.0679
+              },
+              {
+                "value": "brinquedos",
+                "count": 1411,
+                "percentage": 4.3629
+              },
+              {
+                "value": "relogios_presentes",
+                "count": 1329,
+                "percentage": 4.1093
+              },
+              {
+                "value": "telefonia",
+                "count": 1134,
+                "percentage": 3.5064
+              },
+              {
+                "value": "bebes",
+                "count": 919,
+                "percentage": 2.8416
+              },
+              {
+                "value": "perfumaria",
+                "count": 868,
+                "percentage": 2.6839
+              },
+              {
+                "value": "fashion_bolsas_e_acessorios",
+                "count": 849,
+                "percentage": 2.6252
+              },
+              {
+                "value": "papelaria",
+                "count": 849,
+                "percentage": 2.6252
+              },
+              {
+                "value": "cool_stuff",
+                "count": 789,
+                "percentage": 2.4396
+              },
+              {
+                "value": "ferramentas_jardim",
+                "count": 753,
+                "percentage": 2.3283
+              },
+              {
+                "value": "pet_shop",
+                "count": 719,
+                "percentage": 2.2232
+              },
+              {
+                "value": "eletronicos",
+                "count": 517,
+                "percentage": 1.5986
+              },
+              {
+                "value": "construcao_ferramentas_construcao",
+                "count": 400,
+                "percentage": 1.2368
+              },
+              {
+                "value": "eletrodomesticos",
+                "count": 370,
+                "percentage": 1.1441
+              }
+            ]
+          }
+        },
+        {
+          "name": "product_name_lenght",
+          "dtype": "Int64",
+          "null_count": 610,
+          "null_percentage": 1.8512,
+          "unique_count": 67,
+          "unique_percentage": 0.2033,
+          "numeric": {
+            "min": 5,
+            "max": 76,
+            "mean": 48.47694876472589,
+            "median": 51.0,
+            "std": 10.245740725237237,
+            "q1": 42.0,
+            "q3": 57.0,
+            "iqr": 15.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 290,
+            "potential_outlier_percentage": 0.8967
+          }
+        },
+        {
+          "name": "product_description_lenght",
+          "dtype": "Int64",
+          "null_count": 610,
+          "null_percentage": 1.8512,
+          "unique_count": 2961,
+          "unique_percentage": 8.9861,
+          "numeric": {
+            "min": 4,
+            "max": 3992,
+            "mean": 771.4952846232337,
+            "median": 595.0,
+            "std": 635.1152246349536,
+            "q1": 339.0,
+            "q3": 972.0,
+            "iqr": 633.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 2078,
+            "potential_outlier_percentage": 6.4253
+          }
+        },
+        {
+          "name": "product_photos_qty",
+          "dtype": "Int64",
+          "null_count": 610,
+          "null_percentage": 1.8512,
+          "unique_count": 20,
+          "unique_percentage": 0.0607,
+          "numeric": {
+            "min": 1,
+            "max": 20,
+            "mean": 2.1889861166939797,
+            "median": 1.0,
+            "std": 1.7367656379315444,
+            "q1": 1.0,
+            "q3": 3.0,
+            "iqr": 2.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 849,
+            "potential_outlier_percentage": 2.6252
+          }
+        },
+        {
+          "name": "product_weight_g",
+          "dtype": "Int64",
+          "null_count": 2,
+          "null_percentage": 0.0061,
+          "unique_count": 2205,
+          "unique_percentage": 6.6918,
+          "numeric": {
+            "min": 0,
+            "max": 40425,
+            "mean": 2276.4724877841513,
+            "median": 700.0,
+            "std": 4282.038730977007,
+            "q1": 300.0,
+            "q3": 1900.0,
+            "iqr": 1600.0,
+            "zero_count": 4,
+            "negative_count": 0,
+            "potential_outlier_count": 4551,
+            "potential_outlier_percentage": 13.8123
+          }
+        },
+        {
+          "name": "product_length_cm",
+          "dtype": "Int64",
+          "null_count": 2,
+          "null_percentage": 0.0061,
+          "unique_count": 100,
+          "unique_percentage": 0.3035,
+          "numeric": {
+            "min": 7,
+            "max": 105,
+            "mean": 30.81507784758263,
+            "median": 25.0,
+            "std": 16.914458054065967,
+            "q1": 18.0,
+            "q3": 38.0,
+            "iqr": 20.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 1380,
+            "potential_outlier_percentage": 4.1883
+          }
+        },
+        {
+          "name": "product_height_cm",
+          "dtype": "Int64",
+          "null_count": 2,
+          "null_percentage": 0.0061,
+          "unique_count": 103,
+          "unique_percentage": 0.3126,
+          "numeric": {
+            "min": 2,
+            "max": 105,
+            "mean": 16.937661234028347,
+            "median": 13.0,
+            "std": 13.637554061749496,
+            "q1": 8.0,
+            "q3": 21.0,
+            "iqr": 13.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 1892,
+            "potential_outlier_percentage": 5.7422
+          }
+        },
+        {
+          "name": "product_width_cm",
+          "dtype": "Int64",
+          "null_count": 2,
+          "null_percentage": 0.0061,
+          "unique_count": 96,
+          "unique_percentage": 0.2913,
+          "numeric": {
+            "min": 6,
+            "max": 118,
+            "mean": 23.196728277034204,
+            "median": 20.0,
+            "std": 12.079047453227835,
+            "q1": 15.0,
+            "q3": 30.0,
+            "iqr": 15.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 912,
+            "potential_outlier_percentage": 2.7679
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "olist_sellers_dataset.csv",
+      "file_size_bytes": 174703,
+      "row_count": 3095,
+      "column_count": 4,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "seller_id",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 3095,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 3095,
+            "top_values": [
+              {
+                "value": "6548c2550b6e2d8f18053216e1c7b6f3",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "3dc69bf2c42f0568a5c4791ec3fd3745",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "17eea220a40cc0d2c0c5346379682398",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "dfc475d54e1b6dbeeb7d7d9bdaa63827",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "2dee2ce60de9709b1a24083217181a1f",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "08cdbae123ff67ca4e36d9d641ce0119",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "8fbe2ee446b97e128471be4ce983dc0d",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "5e106d93b717c2682b9383da480364a1",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "4c60877808f4318ef1107fbeb8f89afa",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "804287717b9156fb7a787acd9af4fac1",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "76c47a299e4a8fe992316a85865acbe9",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "c1ed9e3daf6154542826a6996af0fb8c",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "6c6cc59a5c00cacc5054ca06d65cc282",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "75d34ebb1bd0bd7dde40dd507b8169c3",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "f84fa566034f5e8e880a07ec624c56af",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "30c7f28fd3a5897b2c82d152bb760c17",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "698624c6632eeba1774924dbea24c700",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "d2e753bb80b7d4faa77483ed00edc8ca",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "56a8b450e802502ba53a9885ee38e29f",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "4e5725ba188db8252977a4f0227bd462",
+                "count": 1,
+                "percentage": 0.0323
+              }
+            ]
+          }
+        },
+        {
+          "name": "seller_zip_code_prefix",
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 2246,
+          "unique_percentage": 72.5687,
+          "numeric": {
+            "min": 1001,
+            "max": 99730,
+            "mean": 32291.059450726978,
+            "median": 14940.0,
+            "std": 32713.453829509002,
+            "q1": 7094.0,
+            "q3": 65072.0,
+            "iqr": 57978.0,
+            "zero_count": 0,
+            "negative_count": 0,
+            "potential_outlier_count": 0,
+            "potential_outlier_percentage": 0.0
+          }
+        },
+        {
+          "name": "seller_city",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 611,
+          "unique_percentage": 19.7415,
+          "categorical": {
+            "unique_count": 611,
+            "top_values": [
+              {
+                "value": "sao paulo",
+                "count": 694,
+                "percentage": 22.4233
+              },
+              {
+                "value": "curitiba",
+                "count": 127,
+                "percentage": 4.1034
+              },
+              {
+                "value": "rio de janeiro",
+                "count": 96,
+                "percentage": 3.1018
+              },
+              {
+                "value": "belo horizonte",
+                "count": 68,
+                "percentage": 2.1971
+              },
+              {
+                "value": "ribeirao preto",
+                "count": 52,
+                "percentage": 1.6801
+              },
+              {
+                "value": "guarulhos",
+                "count": 50,
+                "percentage": 1.6155
+              },
+              {
+                "value": "ibitinga",
+                "count": 49,
+                "percentage": 1.5832
+              },
+              {
+                "value": "santo andre",
+                "count": 45,
+                "percentage": 1.454
+              },
+              {
+                "value": "campinas",
+                "count": 41,
+                "percentage": 1.3247
+              },
+              {
+                "value": "maringa",
+                "count": 40,
+                "percentage": 1.2924
+              },
+              {
+                "value": "sao jose do rio preto",
+                "count": 33,
+                "percentage": 1.0662
+              },
+              {
+                "value": "sorocaba",
+                "count": 32,
+                "percentage": 1.0339
+              },
+              {
+                "value": "sao bernardo do campo",
+                "count": 32,
+                "percentage": 1.0339
+              },
+              {
+                "value": "osasco",
+                "count": 32,
+                "percentage": 1.0339
+              },
+              {
+                "value": "brasilia",
+                "count": 28,
+                "percentage": 0.9047
+              },
+              {
+                "value": "porto alegre",
+                "count": 28,
+                "percentage": 0.9047
+              },
+              {
+                "value": "londrina",
+                "count": 26,
+                "percentage": 0.8401
+              },
+              {
+                "value": "goiania",
+                "count": 23,
+                "percentage": 0.7431
+              },
+              {
+                "value": "joinville",
+                "count": 22,
+                "percentage": 0.7108
+              },
+              {
+                "value": "blumenau",
+                "count": 21,
+                "percentage": 0.6785
+              }
+            ]
+          }
+        },
+        {
+          "name": "seller_state",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 23,
+          "unique_percentage": 0.7431,
+          "categorical": {
+            "unique_count": 23,
+            "top_values": [
+              {
+                "value": "SP",
+                "count": 1849,
+                "percentage": 59.7415
+              },
+              {
+                "value": "PR",
+                "count": 349,
+                "percentage": 11.2763
+              },
+              {
+                "value": "MG",
+                "count": 244,
+                "percentage": 7.8837
+              },
+              {
+                "value": "SC",
+                "count": 190,
+                "percentage": 6.1389
+              },
+              {
+                "value": "RJ",
+                "count": 171,
+                "percentage": 5.525
+              },
+              {
+                "value": "RS",
+                "count": 129,
+                "percentage": 4.168
+              },
+              {
+                "value": "GO",
+                "count": 40,
+                "percentage": 1.2924
+              },
+              {
+                "value": "DF",
+                "count": 30,
+                "percentage": 0.9693
+              },
+              {
+                "value": "ES",
+                "count": 23,
+                "percentage": 0.7431
+              },
+              {
+                "value": "BA",
+                "count": 19,
+                "percentage": 0.6139
+              },
+              {
+                "value": "CE",
+                "count": 13,
+                "percentage": 0.42
+              },
+              {
+                "value": "PE",
+                "count": 9,
+                "percentage": 0.2908
+              },
+              {
+                "value": "PB",
+                "count": 6,
+                "percentage": 0.1939
+              },
+              {
+                "value": "RN",
+                "count": 5,
+                "percentage": 0.1616
+              },
+              {
+                "value": "MS",
+                "count": 5,
+                "percentage": 0.1616
+              },
+              {
+                "value": "MT",
+                "count": 4,
+                "percentage": 0.1292
+              },
+              {
+                "value": "SE",
+                "count": 2,
+                "percentage": 0.0646
+              },
+              {
+                "value": "RO",
+                "count": 2,
+                "percentage": 0.0646
+              },
+              {
+                "value": "AC",
+                "count": 1,
+                "percentage": 0.0323
+              },
+              {
+                "value": "PI",
+                "count": 1,
+                "percentage": 0.0323
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "product_category_name_translation.csv",
+      "file_size_bytes": 2613,
+      "row_count": 71,
+      "column_count": 2,
+      "duplicate_row_count": 0,
+      "duplicate_row_percentage": 0.0,
+      "columns": [
+        {
+          "name": "product_category_name",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 71,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 71,
+            "top_values": [
+              {
+                "value": "utilidades_domesticas",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fashion_underwear_e_moda_praia",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "livros_interesse_geral",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "cine_foto",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "livros_tecnicos",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "dvds_blu_ray",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "informatica_acessorios",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "moveis_sala",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "seguros_e_servicos",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "musica",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "alimentos",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "construcao_ferramentas_seguranca",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "la_cuisine",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "market_place",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "eletrodomesticos_2",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fashion_roupa_feminina",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fashion_calcados",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fraldas_higiene",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "relogios_presentes",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "construcao_ferramentas_construcao",
+                "count": 1,
+                "percentage": 1.4085
+              }
+            ]
+          }
+        },
+        {
+          "name": "product_category_name_english",
+          "dtype": "String",
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "unique_count": 71,
+          "unique_percentage": 100.0,
+          "categorical": {
+            "unique_count": 71,
+            "top_values": [
+              {
+                "value": "cine_photo",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "computers_accessories",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "auto",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "health_beauty",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "perfumery",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fashion_sport",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "pet_shop",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "christmas_supplies",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fashion_shoes",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "furniture_bedroom",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "signaling_and_security",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "electronics",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "home_confort",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "cool_stuff",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "costruction_tools_tools",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "party_supplies",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "furniture_mattress_and_upholstery",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "furniture_living_room",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "home_appliances_2",
+                "count": 1,
+                "percentage": 1.4085
+              },
+              {
+                "value": "fashio_female_clothing",
+                "count": 1,
+                "percentage": 1.4085
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
