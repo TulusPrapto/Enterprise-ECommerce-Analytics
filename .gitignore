@@ -8,6 +8,7 @@ __pycache__/
 
 # VS Code
 .vscode/
+.idea/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -35,3 +36,6 @@ Thumbs.db
 
 # DuckDB temporary
 *.duckdb.tmp
+
+# Generated processed datasets
+data/processed/

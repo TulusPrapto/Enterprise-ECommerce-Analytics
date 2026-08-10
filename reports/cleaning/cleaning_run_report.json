@@ -1,0 +1,359 @@
+{
+  "metadata": {
+    "pipeline": "deterministic_cleaning_v1",
+    "dataset_count": 9,
+    "started_at": "2026-08-10T07:21:45.278982+00:00",
+    "completed_at": "2026-08-10T07:21:46.506875+00:00"
+  },
+  "summary": {
+    "datasets_processed": 9,
+    "datasets_passed": 9,
+    "datasets_failed": 0
+  },
+  "datasets": [
+    {
+      "file_name": "olist_customers_dataset.csv",
+      "raw_row_count": 99441,
+      "cleaned_row_count": 99441,
+      "column_count": 5,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_customers_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 99441,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 99441,
+          "cleaned_row_count": 99441,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "customer_id"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_geolocation_dataset.csv",
+      "raw_row_count": 1000163,
+      "cleaned_row_count": 1000163,
+      "column_count": 5,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_geolocation_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 1000163,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 1000163,
+          "cleaned_row_count": 1000163,
+          "message": "Row count preserved."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_order_items_dataset.csv",
+      "raw_row_count": 112650,
+      "cleaned_row_count": 112650,
+      "column_count": 7,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_order_items_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 112650,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 112650,
+          "cleaned_row_count": 112650,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "order_id",
+            "order_item_id"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_order_payments_dataset.csv",
+      "raw_row_count": 103886,
+      "cleaned_row_count": 103886,
+      "column_count": 5,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_order_payments_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 103886,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 103886,
+          "cleaned_row_count": 103886,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "order_id",
+            "payment_sequential"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_order_reviews_dataset.csv",
+      "raw_row_count": 99224,
+      "cleaned_row_count": 99224,
+      "column_count": 7,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_order_reviews_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 99224,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 99224,
+          "cleaned_row_count": 99224,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "review_id",
+            "order_id"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_orders_dataset.csv",
+      "raw_row_count": 99441,
+      "cleaned_row_count": 99441,
+      "column_count": 8,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_orders_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 99441,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 99441,
+          "cleaned_row_count": 99441,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "order_id"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_products_dataset.csv",
+      "raw_row_count": 32951,
+      "cleaned_row_count": 32951,
+      "column_count": 9,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_products_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 32951,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 32951,
+          "cleaned_row_count": 32951,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "product_id"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "olist_sellers_dataset.csv",
+      "raw_row_count": 3095,
+      "cleaned_row_count": 3095,
+      "column_count": 4,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\olist_sellers_dataset.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 3095,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 3095,
+          "cleaned_row_count": 3095,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "seller_id"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    },
+    {
+      "file_name": "product_category_name_translation.csv",
+      "raw_row_count": 71,
+      "cleaned_row_count": 71,
+      "column_count": 2,
+      "output_path": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed\\product_category_name_translation.csv",
+      "validation_passed": true,
+      "checks": [
+        {
+          "check": "not_empty",
+          "passed": true,
+          "row_count": 71,
+          "message": "Dataset contains rows."
+        },
+        {
+          "check": "required_columns",
+          "passed": true,
+          "missing_columns": [],
+          "message": "All required columns are present."
+        },
+        {
+          "check": "row_count_preserved",
+          "passed": true,
+          "raw_row_count": 71,
+          "cleaned_row_count": 71,
+          "message": "Row count preserved."
+        },
+        {
+          "check": "primary_key",
+          "passed": true,
+          "primary_key": [
+            "product_category_name"
+          ],
+          "null_count": 0,
+          "duplicate_count": 0,
+          "message": "Primary key is valid."
+        }
+      ]
+    }
+  ]
+}
