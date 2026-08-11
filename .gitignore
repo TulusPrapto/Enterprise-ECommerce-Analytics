@@ -39,3 +39,6 @@ Thumbs.db
 
 # Generated processed datasets
 data/processed/
+
+# Generated analytical datasets
+data/analytical/
