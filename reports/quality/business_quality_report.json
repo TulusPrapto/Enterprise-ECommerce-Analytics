@@ -1,0 +1,537 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-11T03:21:02.835921+00:00",
+    "data_modified": false,
+    "source": "data/processed"
+  },
+  "summary": {
+    "total_rules": 18,
+    "passed_rules": 13,
+    "failed_rules": 5,
+    "warning_failures": 4,
+    "critical_failures": 1,
+    "quality_score": 87.04,
+    "grade": "B",
+    "status": "REVIEW"
+  },
+  "dataset_summary": {
+    "olist_orders_dataset.csv": {
+      "total_rules": 5,
+      "passed_rules": 3,
+      "failed_rules": 2,
+      "affected_rows": 31
+    },
+    "olist_order_items_dataset.csv": {
+      "total_rules": 5,
+      "passed_rules": 5,
+      "failed_rules": 0,
+      "affected_rows": 0
+    },
+    "olist_order_payments_dataset.csv": {
+      "total_rules": 4,
+      "passed_rules": 2,
+      "failed_rules": 2,
+      "affected_rows": 11
+    },
+    "olist_order_reviews_dataset.csv": {
+      "total_rules": 2,
+      "passed_rules": 2,
+      "failed_rules": 0,
+      "affected_rows": 0
+    },
+    "olist_products_dataset.csv": {
+      "total_rules": 2,
+      "passed_rules": 1,
+      "failed_rules": 1,
+      "affected_rows": 4
+    }
+  },
+  "failed_rules": [
+    {
+      "rule_id": "ORD-001",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 96478,
+      "affected_rows": 8,
+      "message": "Some delivered orders are missing customer delivery dates.",
+      "sample": [
+        {
+          "order_id": "2d1e2d5bf4dc7227b3bfebb81328c15f",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "f5dd62b788049ad9fc0526e3ad11a097",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "2ebdfc4f15f23b91474edf87475f108e",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "e69f75a717d64fc5ecdfae42b2e8e086",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "0d3268bad9b086af767785e3f0fc0133",
+          "order_status": "delivered"
+        }
+      ]
+    },
+    {
+      "rule_id": "ORD-005",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 99441,
+      "affected_rows": 23,
+      "message": "Some customer delivery dates precede carrier delivery dates.",
+      "sample": [
+        {
+          "order_id": "a1abeb653a4d4cd1e142ccb8c82cd069",
+          "order_delivered_carrier_date": "2017-07-28 16:57:58",
+          "order_delivered_customer_date": "2017-07-25 19:32:56"
+        },
+        {
+          "order_id": "383aa8b2724fe452d9ccd9934a8c628b",
+          "order_delivered_carrier_date": "2017-07-07 17:22:41",
+          "order_delivered_customer_date": "2017-07-06 14:27:51"
+        },
+        {
+          "order_id": "cb1134f9010d242e9515ad1c78ec0c39",
+          "order_delivered_carrier_date": "2017-07-20 19:22:02",
+          "order_delivered_customer_date": "2017-07-19 14:13:28"
+        },
+        {
+          "order_id": "dceb62e8fa94b46006c9554fed743df0",
+          "order_delivered_carrier_date": "2017-08-01 18:23:30",
+          "order_delivered_customer_date": "2017-07-26 18:09:10"
+        },
+        {
+          "order_id": "5f9d46795c3126674e52becb3a1a517f",
+          "order_delivered_carrier_date": "2017-07-20 23:03:42",
+          "order_delivered_customer_date": "2017-07-20 18:52:41"
+        }
+      ]
+    },
+    {
+      "rule_id": "PAY-001",
+      "dataset": "olist_order_payments_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 103886,
+      "affected_rows": 9,
+      "message": "Some payment records have zero or negative values.",
+      "sample": [
+        {
+          "order_id": "8bcbe01d44d147f901cd3192671144db",
+          "payment_sequential": 4,
+          "payment_type": "voucher",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "fa65dad1b0e818e3ccc5cb0e39231352",
+          "payment_sequential": 14,
+          "payment_type": "voucher",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "6ccb433e00daae1283ccc956189c82ae",
+          "payment_sequential": 4,
+          "payment_type": "voucher",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "4637ca194b6387e2d538dc89b124b0ee",
+          "payment_sequential": 1,
+          "payment_type": "not_defined",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "00b1cb0320190ca0daa2c88b35206009",
+          "payment_sequential": 1,
+          "payment_type": "not_defined",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        }
+      ]
+    },
+    {
+      "rule_id": "PAY-003",
+      "dataset": "olist_order_payments_dataset.csv",
+      "severity": "FAIL",
+      "passed": false,
+      "evaluated_rows": 103886,
+      "affected_rows": 2,
+      "message": "Some payment records have invalid installment values.",
+      "sample": [
+        {
+          "order_id": "744bade1fcf9ff3f31d860ace076d422",
+          "payment_sequential": 2,
+          "payment_type": "credit_card",
+          "payment_installments": 0,
+          "payment_value": 58.69
+        },
+        {
+          "order_id": "1a57108394169c0b47d8f876acc9ba2d",
+          "payment_sequential": 2,
+          "payment_type": "credit_card",
+          "payment_installments": 0,
+          "payment_value": 129.94
+        }
+      ]
+    },
+    {
+      "rule_id": "PROD-001",
+      "dataset": "olist_products_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 32949,
+      "affected_rows": 4,
+      "message": "Some products have non-positive weight values.",
+      "sample": [
+        {
+          "product_id": "81781c0fed9fe1ad6e8c81fca1e1cb08",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        },
+        {
+          "product_id": "8038040ee2a71048d4bdbbdc985b69ab",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        },
+        {
+          "product_id": "36ba42dd187055e1fbe943b2d11430ca",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        },
+        {
+          "product_id": "e673e90efa65a5409ff4196c038bb5af",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "ORD-001",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 96478,
+      "affected_rows": 8,
+      "message": "Some delivered orders are missing customer delivery dates.",
+      "sample": [
+        {
+          "order_id": "2d1e2d5bf4dc7227b3bfebb81328c15f",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "f5dd62b788049ad9fc0526e3ad11a097",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "2ebdfc4f15f23b91474edf87475f108e",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "e69f75a717d64fc5ecdfae42b2e8e086",
+          "order_status": "delivered"
+        },
+        {
+          "order_id": "0d3268bad9b086af767785e3f0fc0133",
+          "order_status": "delivered"
+        }
+      ]
+    },
+    {
+      "rule_id": "ORD-002",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "WARNING",
+      "passed": true,
+      "evaluated_rows": 96478,
+      "affected_rows": 0,
+      "message": "All delivered orders have an estimated delivery date.",
+      "sample": []
+    },
+    {
+      "rule_id": "ORD-003",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 99441,
+      "affected_rows": 0,
+      "message": "Delivery dates are not earlier than purchase timestamps.",
+      "sample": []
+    },
+    {
+      "rule_id": "ORD-004",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "WARNING",
+      "passed": true,
+      "evaluated_rows": 99441,
+      "affected_rows": 0,
+      "message": "Approval timestamps do not precede purchase timestamps.",
+      "sample": []
+    },
+    {
+      "rule_id": "ORD-005",
+      "dataset": "olist_orders_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 99441,
+      "affected_rows": 23,
+      "message": "Some customer delivery dates precede carrier delivery dates.",
+      "sample": [
+        {
+          "order_id": "a1abeb653a4d4cd1e142ccb8c82cd069",
+          "order_delivered_carrier_date": "2017-07-28 16:57:58",
+          "order_delivered_customer_date": "2017-07-25 19:32:56"
+        },
+        {
+          "order_id": "383aa8b2724fe452d9ccd9934a8c628b",
+          "order_delivered_carrier_date": "2017-07-07 17:22:41",
+          "order_delivered_customer_date": "2017-07-06 14:27:51"
+        },
+        {
+          "order_id": "cb1134f9010d242e9515ad1c78ec0c39",
+          "order_delivered_carrier_date": "2017-07-20 19:22:02",
+          "order_delivered_customer_date": "2017-07-19 14:13:28"
+        },
+        {
+          "order_id": "dceb62e8fa94b46006c9554fed743df0",
+          "order_delivered_carrier_date": "2017-08-01 18:23:30",
+          "order_delivered_customer_date": "2017-07-26 18:09:10"
+        },
+        {
+          "order_id": "5f9d46795c3126674e52becb3a1a517f",
+          "order_delivered_carrier_date": "2017-07-20 23:03:42",
+          "order_delivered_customer_date": "2017-07-20 18:52:41"
+        }
+      ]
+    },
+    {
+      "rule_id": "ITEM-001",
+      "dataset": "olist_order_items_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 112650,
+      "affected_rows": 0,
+      "message": "All item prices are non-negative.",
+      "sample": []
+    },
+    {
+      "rule_id": "ITEM-002",
+      "dataset": "olist_order_items_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 112650,
+      "affected_rows": 0,
+      "message": "All freight values are non-negative.",
+      "sample": []
+    },
+    {
+      "rule_id": "PAY-001",
+      "dataset": "olist_order_payments_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 103886,
+      "affected_rows": 9,
+      "message": "Some payment records have zero or negative values.",
+      "sample": [
+        {
+          "order_id": "8bcbe01d44d147f901cd3192671144db",
+          "payment_sequential": 4,
+          "payment_type": "voucher",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "fa65dad1b0e818e3ccc5cb0e39231352",
+          "payment_sequential": 14,
+          "payment_type": "voucher",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "6ccb433e00daae1283ccc956189c82ae",
+          "payment_sequential": 4,
+          "payment_type": "voucher",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "4637ca194b6387e2d538dc89b124b0ee",
+          "payment_sequential": 1,
+          "payment_type": "not_defined",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        },
+        {
+          "order_id": "00b1cb0320190ca0daa2c88b35206009",
+          "payment_sequential": 1,
+          "payment_type": "not_defined",
+          "payment_installments": 1,
+          "payment_value": 0.0
+        }
+      ]
+    },
+    {
+      "rule_id": "PAY-002",
+      "dataset": "olist_order_payments_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 103886,
+      "affected_rows": 0,
+      "message": "All payment sequential values are valid.",
+      "sample": []
+    },
+    {
+      "rule_id": "PAY-003",
+      "dataset": "olist_order_payments_dataset.csv",
+      "severity": "FAIL",
+      "passed": false,
+      "evaluated_rows": 103886,
+      "affected_rows": 2,
+      "message": "Some payment records have invalid installment values.",
+      "sample": [
+        {
+          "order_id": "744bade1fcf9ff3f31d860ace076d422",
+          "payment_sequential": 2,
+          "payment_type": "credit_card",
+          "payment_installments": 0,
+          "payment_value": 58.69
+        },
+        {
+          "order_id": "1a57108394169c0b47d8f876acc9ba2d",
+          "payment_sequential": 2,
+          "payment_type": "credit_card",
+          "payment_installments": 0,
+          "payment_value": 129.94
+        }
+      ]
+    },
+    {
+      "rule_id": "REV-001",
+      "dataset": "olist_order_reviews_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 99224,
+      "affected_rows": 0,
+      "message": "All review scores are between 1 and 5.",
+      "sample": []
+    },
+    {
+      "rule_id": "PROD-001",
+      "dataset": "olist_products_dataset.csv",
+      "severity": "WARNING",
+      "passed": false,
+      "evaluated_rows": 32949,
+      "affected_rows": 4,
+      "message": "Some products have non-positive weight values.",
+      "sample": [
+        {
+          "product_id": "81781c0fed9fe1ad6e8c81fca1e1cb08",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        },
+        {
+          "product_id": "8038040ee2a71048d4bdbbdc985b69ab",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        },
+        {
+          "product_id": "36ba42dd187055e1fbe943b2d11430ca",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        },
+        {
+          "product_id": "e673e90efa65a5409ff4196c038bb5af",
+          "product_weight_g": 0,
+          "product_length_cm": 30,
+          "product_height_cm": 25,
+          "product_width_cm": 30
+        }
+      ]
+    },
+    {
+      "rule_id": "PROD-002",
+      "dataset": "olist_products_dataset.csv",
+      "severity": "WARNING",
+      "passed": true,
+      "evaluated_rows": 32951,
+      "affected_rows": 0,
+      "message": "All non-null product dimensions are greater than zero.",
+      "sample": []
+    },
+    {
+      "rule_id": "REL-001",
+      "dataset": "olist_order_items_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 112650,
+      "affected_rows": 0,
+      "message": "All order items reference existing orders.",
+      "sample": []
+    },
+    {
+      "rule_id": "REL-002",
+      "dataset": "olist_order_payments_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 103886,
+      "affected_rows": 0,
+      "message": "All payments reference existing orders.",
+      "sample": []
+    },
+    {
+      "rule_id": "REL-003",
+      "dataset": "olist_order_reviews_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 99224,
+      "affected_rows": 0,
+      "message": "All reviews reference existing orders.",
+      "sample": []
+    },
+    {
+      "rule_id": "REL-004",
+      "dataset": "olist_order_items_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 112650,
+      "affected_rows": 0,
+      "message": "All order items reference existing products.",
+      "sample": []
+    },
+    {
+      "rule_id": "REL-005",
+      "dataset": "olist_order_items_dataset.csv",
+      "severity": "FAIL",
+      "passed": true,
+      "evaluated_rows": 112650,
+      "affected_rows": 0,
+      "message": "All order items reference existing sellers.",
+      "sample": []
+    }
+  ]
+}

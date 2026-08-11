@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "purpose": "Investigate business data quality exceptions without modifying source or processed data.",
+    "source": "D:\\Projects\\Enterprise-ECommerce-Analytics\\data\\processed"
+  },
+  "investigations": {
+    "orders": {
+      "ORD-001": {
+        "rule": "Delivered orders should have customer delivery dates.",
+        "affected_rows": 8,
+        "sample": [
+          {
+            "order_id": "2d1e2d5bf4dc7227b3bfebb81328c15f",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2017-11-28 17:44:07",
+            "order_estimated_delivery_date": "2017-12-18 00:00:00",
+            "order_delivered_carrier_date": "2017-11-30 18:12:23",
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "f5dd62b788049ad9fc0526e3ad11a097",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2018-06-20 06:58:43",
+            "order_estimated_delivery_date": "2018-07-16 00:00:00",
+            "order_delivered_carrier_date": "2018-06-25 08:05:00",
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "2ebdfc4f15f23b91474edf87475f108e",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2018-07-01 17:05:11",
+            "order_estimated_delivery_date": "2018-07-30 00:00:00",
+            "order_delivered_carrier_date": "2018-07-03 13:57:00",
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "e69f75a717d64fc5ecdfae42b2e8e086",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2018-07-01 22:05:55",
+            "order_estimated_delivery_date": "2018-07-30 00:00:00",
+            "order_delivered_carrier_date": "2018-07-03 13:57:00",
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "0d3268bad9b086af767785e3f0fc0133",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2018-07-01 21:14:02",
+            "order_estimated_delivery_date": "2018-07-24 00:00:00",
+            "order_delivered_carrier_date": "2018-07-03 09:28:00",
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "2d858f451373b04fb5c984a1cc2defaf",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2017-05-25 23:22:43",
+            "order_estimated_delivery_date": "2017-06-23 00:00:00",
+            "order_delivered_carrier_date": null,
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "ab7c89dc1bf4a1ead9d6ec1ec8968a84",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2018-06-08 12:09:39",
+            "order_estimated_delivery_date": "2018-06-26 00:00:00",
+            "order_delivered_carrier_date": "2018-06-12 14:10:00",
+            "order_delivered_customer_date": null
+          },
+          {
+            "order_id": "20edc82cf5400ce95e1afacc25798b31",
+            "order_status": "delivered",
+            "order_purchase_timestamp": "2018-06-27 16:09:12",
+            "order_estimated_delivery_date": "2018-07-19 00:00:00",
+            "order_delivered_carrier_date": "2018-07-03 19:26:00",
+            "order_delivered_customer_date": null
+          }
+        ]
+      },
+      "ORD-005": {
+        "rule": "Customer delivery date should not precede carrier delivery date.",
+        "affected_rows": 23,
+        "sample": [
+          {
+            "order_id": "a1abeb653a4d4cd1e142ccb8c82cd069",
+            "order_purchase_timestamp": "2017-07-20 11:20:52",
+            "order_delivered_carrier_date": "2017-07-28 16:57:58",
+            "order_delivered_customer_date": "2017-07-25 19:32:56",
+            "order_estimated_delivery_date": "2017-08-14 00:00:00"
+          },
+          {
+            "order_id": "383aa8b2724fe452d9ccd9934a8c628b",
+            "order_purchase_timestamp": "2017-07-02 20:58:43",
+            "order_delivered_carrier_date": "2017-07-07 17:22:41",
+            "order_delivered_customer_date": "2017-07-06 14:27:51",
+            "order_estimated_delivery_date": "2017-07-21 00:00:00"
+          },
+          {
+            "order_id": "cb1134f9010d242e9515ad1c78ec0c39",
+            "order_purchase_timestamp": "2017-07-16 12:35:34",
+            "order_delivered_carrier_date": "2017-07-20 19:22:02",
+            "order_delivered_customer_date": "2017-07-19 14:13:28",
+            "order_estimated_delivery_date": "2017-08-08 00:00:00"
+          },
+          {
+            "order_id": "dceb62e8fa94b46006c9554fed743df0",
+            "order_purchase_timestamp": "2017-07-20 20:58:05",
+            "order_delivered_carrier_date": "2017-08-01 18:23:30",
+            "order_delivered_customer_date": "2017-07-26 18:09:10",
+            "order_estimated_delivery_date": "2017-08-11 00:00:00"
+          },
+          {
+            "order_id": "5f9d46795c3126674e52becb3a1a517f",
+            "order_purchase_timestamp": "2017-07-18 11:48:20",
+            "order_delivered_carrier_date": "2017-07-20 23:03:42",
+            "order_delivered_customer_date": "2017-07-20 18:52:41",
+            "order_estimated_delivery_date": "2017-07-31 00:00:00"
+          },
+          {
+            "order_id": "8c78d01de3a9009e23d6877a7cc9be20",
+            "order_purchase_timestamp": "2016-10-08 15:36:50",
+            "order_delivered_carrier_date": "2016-10-26 11:41:53",
+            "order_delivered_customer_date": "2016-10-25 17:51:46",
+            "order_estimated_delivery_date": "2016-11-30 00:00:00"
+          },
+          {
+            "order_id": "b27af682321527a6349f1761eb3f360c",
+            "order_purchase_timestamp": "2017-06-14 20:17:04",
+            "order_delivered_carrier_date": "2017-06-27 14:51:54",
+            "order_delivered_customer_date": "2017-06-26 15:45:35",
+            "order_estimated_delivery_date": "2017-07-14 00:00:00"
+          },
+          {
+            "order_id": "1cc3ae63caffff2d6c3ee3e78e074acf",
+            "order_purchase_timestamp": "2017-08-07 21:35:22",
+            "order_delivered_carrier_date": "2017-08-10 18:28:56",
+            "order_delivered_customer_date": "2017-08-10 18:05:38",
+            "order_estimated_delivery_date": "2017-08-25 00:00:00"
+          },
+          {
+            "order_id": "e37f11cae9985ca58f0b56f268720537",
+            "order_purchase_timestamp": "2017-07-26 11:46:34",
+            "order_delivered_carrier_date": "2017-08-01 18:17:47",
+            "order_delivered_customer_date": "2017-07-31 17:49:56",
+            "order_estimated_delivery_date": "2017-08-24 00:00:00"
+          },
+          {
+            "order_id": "fa3e37584f4fdb1ded0e0de700dfcb4e",
+            "order_purchase_timestamp": "2017-07-30 19:32:23",
+            "order_delivered_carrier_date": "2017-08-09 18:18:43",
+            "order_delivered_customer_date": "2017-08-01 21:13:01",
+            "order_estimated_delivery_date": "2017-08-18 00:00:00"
+          },
+          {
+            "order_id": "c1e2bf2b7dd3309f2f5356c6b63968fa",
+            "order_purchase_timestamp": "2017-02-10 10:19:10",
+            "order_delivered_carrier_date": "2017-03-02 17:34:26",
+            "order_delivered_customer_date": "2017-02-14 15:15:57",
+            "order_estimated_delivery_date": "2017-03-15 00:00:00"
+          },
+          {
+            "order_id": "b866af202be0692766081310cd4085e1",
+            "order_purchase_timestamp": "2017-01-27 14:59:17",
+            "order_delivered_carrier_date": "2017-02-20 02:32:08",
+            "order_delivered_customer_date": "2017-02-15 03:53:46",
+            "order_estimated_delivery_date": "2017-04-17 00:00:00"
+          },
+          {
+            "order_id": "29941903985f944b0ffc49c479c1547d",
+            "order_purchase_timestamp": "2017-05-29 16:16:50",
+            "order_delivered_carrier_date": "2017-06-09 15:07:29",
+            "order_delivered_customer_date": "2017-06-02 11:09:16",
+            "order_estimated_delivery_date": "2017-06-23 00:00:00"
+          },
+          {
+            "order_id": "76458889992169d3135b264dc13aec67",
+            "order_purchase_timestamp": "2016-10-07 10:05:16",
+            "order_delivered_carrier_date": "2016-10-26 11:43:06",
+            "order_delivered_customer_date": "2016-10-20 18:03:17",
+            "order_estimated_delivery_date": "2016-11-29 00:00:00"
+          },
+          {
+            "order_id": "0922ee1619de7b995648e5a8407afb91",
+            "order_purchase_timestamp": "2017-07-11 10:45:44",
+            "order_delivered_carrier_date": "2017-07-14 12:41:34",
+            "order_delivered_customer_date": "2017-07-12 20:49:42",
+            "order_estimated_delivery_date": "2017-08-14 00:00:00"
+          },
+          {
+            "order_id": "fbffbaaa30f4077e87ec6acdb835b278",
+            "order_purchase_timestamp": "2017-07-30 17:58:26",
+            "order_delivered_carrier_date": "2017-08-04 20:04:17",
+            "order_delivered_customer_date": "2017-08-03 20:30:00",
+            "order_estimated_delivery_date": "2017-08-18 00:00:00"
+          },
+          {
+            "order_id": "3ee6694bb99d5a6db0deceffcd099597",
+            "order_purchase_timestamp": "2017-07-07 11:22:13",
+            "order_delivered_carrier_date": "2017-07-11 18:15:40",
+            "order_delivered_customer_date": "2017-07-11 17:41:26",
+            "order_estimated_delivery_date": "2017-07-20 00:00:00"
+          },
+          {
+            "order_id": "19feb5627c41ea1b36a8e50a469b3644",
+            "order_purchase_timestamp": "2016-10-07 17:09:56",
+            "order_delivered_carrier_date": "2016-10-26 11:42:05",
+            "order_delivered_customer_date": "2016-10-20 19:07:54",
+            "order_estimated_delivery_date": "2016-12-01 00:00:00"
+          },
+          {
+            "order_id": "d5558a097766363b8e76b38c43332e8a",
+            "order_purchase_timestamp": "2017-02-04 19:01:33",
+            "order_delivered_carrier_date": "2017-02-15 08:55:26",
+            "order_delivered_customer_date": "2017-02-10 07:58:32",
+            "order_estimated_delivery_date": "2017-03-01 00:00:00"
+          },
+          {
+            "order_id": "771c4f1f521f462e4b95619e648aaeab",
+            "order_purchase_timestamp": "2017-03-22 20:15:15",
+            "order_delivered_carrier_date": "2017-03-30 13:14:34",
+            "order_delivered_customer_date": "2017-03-28 17:28:32",
+            "order_estimated_delivery_date": "2017-04-12 00:00:00"
+          }
+        ]
+      }
+    },
+    "payments": {
+      "PAY-001": {
+        "rule": "Payment value should be greater than zero.",
+        "affected_rows": 9,
+        "sample": [
+          {
+            "order_id": "8bcbe01d44d147f901cd3192671144db",
+            "payment_sequential": 4,
+            "payment_type": "voucher",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "fa65dad1b0e818e3ccc5cb0e39231352",
+            "payment_sequential": 14,
+            "payment_type": "voucher",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "6ccb433e00daae1283ccc956189c82ae",
+            "payment_sequential": 4,
+            "payment_type": "voucher",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "4637ca194b6387e2d538dc89b124b0ee",
+            "payment_sequential": 1,
+            "payment_type": "not_defined",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "00b1cb0320190ca0daa2c88b35206009",
+            "payment_sequential": 1,
+            "payment_type": "not_defined",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "45ed6e85398a87c253db47c2d9f48216",
+            "payment_sequential": 3,
+            "payment_type": "voucher",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "fa65dad1b0e818e3ccc5cb0e39231352",
+            "payment_sequential": 13,
+            "payment_type": "voucher",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "c8c528189310eaa44a745b8d9d26908b",
+            "payment_sequential": 1,
+            "payment_type": "not_defined",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          },
+          {
+            "order_id": "b23878b3e8eb4d25a158f57d96331b18",
+            "payment_sequential": 4,
+            "payment_type": "voucher",
+            "payment_installments": 1,
+            "payment_value": 0.0
+          }
+        ]
+      },
+      "PAY-003": {
+        "rule": "Payment installments should be between 1 and 24.",
+        "affected_rows": 2,
+        "sample": [
+          {
+            "order_id": "744bade1fcf9ff3f31d860ace076d422",
+            "payment_sequential": 2,
+            "payment_type": "credit_card",
+            "payment_installments": 0,
+            "payment_value": 58.69
+          },
+          {
+            "order_id": "1a57108394169c0b47d8f876acc9ba2d",
+            "payment_sequential": 2,
+            "payment_type": "credit_card",
+            "payment_installments": 0,
+            "payment_value": 129.94
+          }
+        ]
+      }
+    },
+    "products": {
+      "PROD-001": {
+        "rule": "Product weight should be greater than zero.",
+        "affected_rows": 4,
+        "sample": [
+          {
+            "product_id": "81781c0fed9fe1ad6e8c81fca1e1cb08",
+            "product_category_name": "cama_mesa_banho",
+            "product_weight_g": 0,
+            "product_length_cm": 30,
+            "product_height_cm": 25,
+            "product_width_cm": 30
+          },
+          {
+            "product_id": "8038040ee2a71048d4bdbbdc985b69ab",
+            "product_category_name": "cama_mesa_banho",
+            "product_weight_g": 0,
+            "product_length_cm": 30,
+            "product_height_cm": 25,
+            "product_width_cm": 30
+          },
+          {
+            "product_id": "36ba42dd187055e1fbe943b2d11430ca",
+            "product_category_name": "cama_mesa_banho",
+            "product_weight_g": 0,
+            "product_length_cm": 30,
+            "product_height_cm": 25,
+            "product_width_cm": 30
+          },
+          {
+            "product_id": "e673e90efa65a5409ff4196c038bb5af",
+            "product_category_name": "cama_mesa_banho",
+            "product_weight_g": 0,
+            "product_length_cm": 30,
+            "product_height_cm": 25,
+            "product_width_cm": 30
+          }
+        ]
+      }
+    }
+  }
+}
