@@ -41,7 +41,8 @@ GEOLOCATION_FILE = SOURCE_DATA_DIR / "olist_geolocation_dataset.csv"
 
 FACT_ORDERS_FILE = ANALYTICAL_DATA_DIR / "fact_orders.parquet"
 FACT_ORDER_ITEMS_FILE = ANALYTICAL_DATA_DIR / "fact_order_items.parquet"
-FACT_PAYMENTS_FILE = ANALYTICAL_DATA_DIR / "fact_payments.parquet"
+FACT_PAYMENTS_FILE = ANALYTICAL_DATA_DIR / "fact_order_payments.parquet"
+FACT_ORDER_REVIEWS_FILE = ANALYTICAL_DATA_DIR / "fact_order_reviews.parquet"
 
 DIM_CUSTOMERS_FILE = ANALYTICAL_DATA_DIR / "dim_customers.parquet"
 DIM_PRODUCTS_FILE = ANALYTICAL_DATA_DIR / "dim_products.parquet"
