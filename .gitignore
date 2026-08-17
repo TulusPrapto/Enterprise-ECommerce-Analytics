@@ -42,3 +42,5 @@ data/processed/
 
 # Generated analytical datasets
 data/analytical/
+# Power BI reports
+powerbi/*.pbix
