@@ -1,14 +1,192 @@
 # Enterprise E-Commerce Analytics
 
-An end-to-end e-commerce analytics project that combines Python/Polars analytical engineering with a Power BI semantic model and executive dashboards.
+> End-to-end e-commerce analytics portfolio project using **Python, Polars, SQL, Power BI, DAX, KPI governance, data validation, and business storytelling**.
 
-The project is designed to demonstrate a professional Data Analyst workflow from raw-source preparation and analytical modeling through KPI definition, reconciliation, Power BI reporting, business insights, and recommendations.
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/TulusPrapto/Enterprise-ECommerce-Analytics)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)](#power-bi-dashboard)
+[![Python](https://img.shields.io/badge/Python-Polars-3776AB?logo=python&logoColor=white)](#technology-stack)
 
-## Project Overview
+---
 
-This project analyzes e-commerce order, product, customer, payment, review, and logistics data to answer key business questions across sales, customers, products, and delivery operations.
+## Executive Summary
 
-The analytical workflow follows:
+This project analyzes an e-commerce dataset across **sales, customers, products, and logistics** and demonstrates a complete Data Analyst workflow from analytical data preparation to executive reporting.
+
+The project was built as a production-style portfolio case study rather than as a visualization-only exercise.
+
+### What the project demonstrates
+
+```text
+Source Data
+    ↓
+Cleaning & Analytical Preparation
+    ↓
+Facts & Dimensions
+    ↓
+Analytical Marts
+    ↓
+KPI Definitions & Calculation
+    ↓
+Validation & Reconciliation
+    ↓
+Power BI Semantic Model
+    ↓
+DAX Measures
+    ↓
+Executive Dashboards
+    ↓
+Business Insights & Recommendations
+```
+
+---
+
+## Business Questions
+
+The analysis focuses on five core business areas.
+
+### Sales Performance
+
+- How are order volume and revenue evolving over time?
+- What is the contribution of product revenue and freight?
+- What is the overall GMV and Average Order Value?
+
+### Customer Analysis
+
+- How large is the customer base?
+- How many customers make repeat purchases?
+- How does repeat-customer activity evolve by month?
+- Where are active customers concentrated geographically?
+
+### Product Analysis
+
+- Which product categories generate the most revenue?
+- Which SKUs contribute the most revenue?
+- How concentrated is revenue among leading products?
+
+### Logistics & Operations
+
+- How many orders are delivered late?
+- What is the late delivery rate?
+- How long does delivery take on average?
+- How are orders distributed across operational statuses?
+
+### Business Storytelling
+
+- What are the most important findings?
+- What business areas deserve attention?
+- What actions or follow-up analyses should management consider?
+
+---
+
+## Key Results
+
+The following figures are the final reconciled baseline used in the current report.
+
+| KPI | Result |
+|---|---:|
+| **GMV** | **15,843,553.24** |
+| **Product Revenue** | **13,591,643.70** |
+| **Total Orders** | **99,441** |
+| **Total Items Sold** | **112,650** |
+| **Average Order Value** | **159.33** |
+| **Total Customers** | **96,096** |
+| **Repeat Customers** | **2,997** |
+| **Repeat Customer Rate** | **3.12%** |
+| **Late Orders** | **6,535** |
+| **Late Delivery Rate** | **6.77%** |
+| **Average Delivery Days** | **12.56** |
+
+### Executive takeaways
+
+1. **Sales:** GMV reached approximately **15.84M**, supported by **13.59M** in product revenue.
+2. **Customers:** Repeat customers represent **3.12%** of the customer base, indicating a potential retention opportunity.
+3. **Products:** Revenue is concentrated among several leading product categories and SKUs.
+4. **Logistics:** **6,535 orders** were classified as late, producing a **6.77% late delivery rate**.
+
+---
+
+## Power BI Dashboard
+
+The report contains four focused pages.
+
+| Page | Purpose |
+|---|---|
+| **Page 1 — Executive Overview** | Overall sales, customer, product, logistics, and operational performance |
+| **Page 2 — Customer & Product Analysis** | New vs repeat customers, geography, and top products |
+| **Page 3 — Logistics & Operations** | Delivery performance, late orders, and order status |
+| **Page 4 — Business Insights & Storytelling** | Key findings, business implications, and recommendations |
+
+### Dashboard preview
+
+The Power BI artifact is stored locally at:
+
+```text
+powerbi/Enterprise-ECommerce-Analytics.pbix
+```
+
+The `.pbix` file is intentionally excluded from Git because it is a binary reporting artifact.
+
+For a public portfolio presentation, dashboard screenshots can be added under:
+
+```text
+assets/dashboard/
+```
+
+without changing the analytical model or documentation structure.
+
+---
+
+## Key Business Insights
+
+### Sales Performance
+
+Monthly revenue and order activity show a strong upward trend across the main observation period, followed by a relatively high and more stable activity level during 2018.
+
+### Customer Retention
+
+Repeat customers represent a relatively small share of the customer base. This makes repeat-purchase behavior an important area for further analysis.
+
+### Logistics
+
+Late delivery remains an operational monitoring area. The final reconciled logistics baseline is:
+
+```text
+Late Orders            = 6,535
+Late Delivery Rate     = 6.77%
+Average Delivery Days  = 12.56
+```
+
+### Product Performance
+
+Revenue is concentrated among several leading categories, with `beleza_saude` generating the highest category revenue in the analysis.
+
+---
+
+## Business Recommendations
+
+### 1. Improve Customer Retention
+
+Develop targeted retention campaigns and personalized offers to increase repeat purchases.
+
+### 2. Monitor Delivery Performance
+
+Investigate the main causes of late deliveries and prioritize improvement in high-delay periods or regions.
+
+### 3. Focus on High-Performing Categories
+
+Maintain availability and marketing support for leading categories while identifying opportunities in underperforming categories.
+
+### 4. Leverage Sales Trends
+
+Use monthly demand patterns to improve inventory planning, promotional timing, and operational capacity.
+
+> These recommendations are action-oriented suggestions. They are not presented as proven causal effects without additional analysis.
+
+---
+
+## Analytical Architecture
+
+The project follows a layered analytical architecture:
 
 ```text
 Raw / Cleaning
@@ -29,269 +207,202 @@ Power BI Semantic Model
       ↓
 DAX Measures
       ↓
-Executive Dashboards
-      ↓
-Business Insights & Recommendations
+Dashboard / Storytelling
 ```
-
-## Business Objectives
-
-The project focuses on five primary analytical areas:
-
-1. **Sales Performance**
-   - Order volume
-   - Product revenue
-   - Freight revenue
-   - GMV
-   - Average Order Value
-   - Monthly sales trends
-
-2. **Customer Analysis**
-   - Customer base
-   - Repeat customers
-   - Repeat customer rate
-   - New vs repeat customer behavior
-   - Geographic customer distribution
-
-3. **Product Analysis**
-   - Revenue by product category
-   - Top products by revenue
-   - Product sales contribution
-
-4. **Logistics & Operations**
-   - Late orders
-   - Late delivery rate
-   - Average delivery days
-   - Order-status distribution
-   - Monthly delivery performance
-
-5. **Business Storytelling**
-   - Key business findings
-   - Business implications
-   - Action-oriented recommendations
-
-## Analytical Architecture
 
 ### Dimensions
 
-- `dim_date`
-- `dim_customers`
-- `dim_products`
-- `dim_sellers`
+```text
+dim_date
+dim_customers
+dim_products
+dim_sellers
+```
 
-### Fact Tables
+### Fact tables
 
-- `fact_orders` — one row per order
-- `fact_order_items` — one row per order item
-- `fact_order_payments` — one row per payment record
-- `fact_order_reviews` — one row per review record
+```text
+fact_orders
+fact_order_items
+fact_order_payments
+fact_order_reviews
+```
 
-### Analytical Marts
+### Analytical marts
 
-- `mart_sales`
-- `mart_customers`
-- `mart_products`
-- `mart_logistics`
+```text
+mart_sales
+mart_customers
+mart_products
+mart_logistics
+```
 
-### Reporting Outputs
+### KPI / reporting outputs
 
-- `kpi_summary`
-- `kpi_monthly`
-- Power BI semantic model and `.pbix` report
+```text
+kpi_summary
+kpi_monthly
+```
 
-## Key Data Characteristics
+---
 
-The validated analytical layer contains:
+## Data Model
 
-| Table | Rows | Grain |
-|---|---:|---|
-| `dim_customers` | 99,441 | One row per `customer_id` |
-| `dim_date` | 800 | One row per calendar date |
-| `dim_products` | 32,951 | One row per product |
-| `dim_sellers` | 3,095 | One row per seller |
-| `fact_orders` | 99,441 | One row per order |
-| `fact_order_items` | 112,650 | One row per order item |
-| `fact_order_payments` | 103,886 | One row per payment record |
-| `fact_order_reviews` | 99,224 | One row per review record |
-| `mart_customers` | 96,096 | One row per `customer_unique_id` |
-| `mart_logistics` | 99,441 | One row per order |
-
-## KPI Baseline
-
-The following values were reconciled between the analytical pipeline and Power BI under the default all-data context:
-
-| KPI | Value |
-|---|---:|
-| Total Orders | 99,441 |
-| Total Items Sold | 112,650 |
-| Product Revenue | 13,591,643.70 |
-| Freight Revenue | 2,251,909.54 |
-| GMV | 15,843,553.24 |
-| Average Order Value | 159.33 |
-| Total Customers | 96,096 |
-| Repeat Customers | 2,997 |
-| Repeat Customer Rate | 3.12% |
-| Late Orders | 6,535 |
-| Late Delivery Rate | 6.77% |
-| Average Delivery Days | 12.56 |
-
-### Logistics KPI Definition
-
-The official logistics definitions are based on the analytical KPI contract:
-
-- **Late Delivery Rate** = Late delivered orders / orders with a delivery timestamp.
-- **Average Delivery Days** = Average elapsed time from purchase to customer delivery.
-- A late delivery is based on the delivery date occurring after the estimated delivery date, using date-level logic consistent with the analytical mart.
-
-## Power BI Semantic Model
-
-The Power BI model uses the validated analytical tables as its foundation.
-
-Core relationships include:
+The primary Power BI relationships are:
 
 ```text
 dim_date
-   │
-   └── 1:* → fact_orders
-
+   |
+   | 1 : *
+   v
 fact_orders
-   ├── 1:* → fact_order_items
-   ├── 1:* → fact_order_payments
-   └── 1:* → fact_order_reviews
+   |
+   |-- 1 : * -> fact_order_items
+   |-- 1 : * -> fact_order_payments
+   |-- 1 : * -> fact_order_reviews
 
 fact_order_items
-   ├── *:1 → dim_products
-   └── *:1 → dim_sellers
+   |-- * : 1 -> dim_products
+   |-- * : 1 -> dim_sellers
 
 fact_orders
-   └── 1:1 ↔ dim_customers
+   |-- 1 : 1 <-> dim_customers
 ```
 
-The main active date relationship is based on:
+The main active date relationship is:
 
 ```text
 dim_date[date]
-        ↓
+      1
+      |
+      *
+      v
 fact_orders[order_purchase_date]
 ```
 
-`dim_date` is configured as the Power BI Date Table.
+The project preserves the distinction between:
 
-## Power BI Report Pages
+```text
+customer_id
+customer_unique_id
+```
 
-### Page 1 — Executive Overview
+Customer-level metrics such as Total Customers and Repeat Customers use `customer_unique_id`.
 
-Provides a high-level view of:
+More detail is documented in [`docs/data_model.md`](docs/data_model.md).
 
-- Sales KPIs
-- Product category performance
-- Customer overview
-- Logistics KPIs
-- Order-status distribution
-- Monthly order trends
-- Year and order-status slicers
+---
 
-### Page 2 — Customer & Product Analysis
+## KPI Governance
 
-Focuses on:
+The project treats KPI definitions as an analytical contract shared between the Python/Polars pipeline and Power BI.
 
-- New vs repeat customers by month
-- Repeat customer behavior
-- Top states by active customers in the selected period
-- Top products (SKU) by revenue
-- Year filtering
+Core KPI definitions are documented in:
 
-### Page 3 — Logistics & Operations
+[`docs/kpi_definitions.md`](docs/kpi_definitions.md)
 
-Focuses on:
+### Important logistics definitions
 
-- Late orders
-- Late delivery rate
-- Average delivery days
-- Late delivery trend
-- Average delivery-day trend
-- Order-status distribution
+**Late Orders**
 
-### Page 4 — Business Insights & Storytelling
+```text
+estimated_delivery_variance_days > 0
+```
 
-Combines executive KPIs, monthly trends, customer behavior, key business insights, and business recommendations.
+using date-level comparison.
 
-## Key Business Insights
+**Late Delivery Rate**
 
-1. **Sales Performance**  
-   GMV reached 15.84M, with Product Revenue contributing approximately 13.59M. Monthly revenue shows a strong upward trend before stabilizing at a relatively high level during 2018.
+```text
+Late Delivered Orders / Orders With Delivery Timestamp
+```
 
-2. **Customer Retention**  
-   Repeat customers account for 3.12% of total customers, indicating that repeat purchasing remains a relatively small component of the customer base.
+**Average Delivery Days**
 
-3. **Logistics**  
-   6,535 orders were classified as late, resulting in an overall 6.77% late delivery rate. Delivery performance should therefore remain a key operational monitoring area.
+```text
+Average(purchase_to_delivery_days)
+```
 
-4. **Product Performance**  
-   Revenue is concentrated among several leading product categories, with `beleza_saude` generating the highest category revenue in the analysis.
+The Power BI measures were reconciled against the analytical mart before final QA.
 
-## Business Recommendations
-
-1. **Improve Customer Retention**  
-   Develop targeted retention campaigns and personalized offers to increase repeat purchases.
-
-2. **Monitor Delivery Performance**  
-   Investigate the main causes of late deliveries and prioritize improvement in high-delay periods or regions.
-
-3. **Focus on High-Performing Categories**  
-   Maintain availability and marketing support for leading categories while identifying opportunities in underperforming categories.
-
-4. **Leverage Sales Trends**  
-   Use monthly demand patterns to improve inventory planning, promotional timing, and operational capacity.
+---
 
 ## Reporting Scope
 
-The underlying analytical model retains the full available date range.
+The underlying model retains the full available analytical date range:
 
-For the default dashboard presentation, visuals focus on **2017–2018** because 2016 contains limited transaction activity, including one month with no transactions. **2016 remains available in the underlying analytical model and can still be selected from the Year slicer.**
+```text
+2016-09-04 -> 2018-11-12
+```
 
-The report therefore separates:
+The default dashboard presentation focuses on:
 
-- **Underlying model coverage:** full analytical date range.
-- **Default dashboard view:** 2017–2018.
+```text
+2017-2018
+```
+
+because 2016 contains limited transaction activity, including one month with no transactions.
+
+### Important
+
+**2016 is not deleted.**
+
+It remains available in the underlying model and can still be selected from the Year slicer.
+
+This is a **presentation/reporting decision**, not a data-removal decision.
+
+See [`docs/reporting_scope.md`](docs/reporting_scope.md) for the full explanation.
+
+---
 
 ## Data Quality & Validation
 
-Before Power BI modeling, the analytical layer was validated through:
+The analytical layer and Power BI report were validated through multiple checkpoints.
 
-- Primary-key uniqueness checks
-- Null validation
-- Foreign-key/orphan checks
-- Fact-to-mart reconciliation
-- Date-dimension continuity and coverage checks
-- Order-grain validation
-- Product and seller referential integrity checks
-- KPI reconciliation between Python/Polars and Power BI
+### Analytical validation
 
-Examples of validated integrity checks include:
+- primary-key uniqueness
+- null validation
+- foreign-key / orphan checks
+- date-dimension coverage
+- fact-to-mart reconciliation
+- order-grain validation
+- product and seller referential integrity
+
+### Power BI QA
 
 ```text
-fact_orders.order_id uniqueness       PASS
-fact_orders → dim_customers           PASS
-fact_order_items → dim_products       PASS
-fact_order_items → dim_sellers        PASS
-fact_orders → mart_sales              PASS
-fact_orders → mart_logistics          PASS
-purchase dates missing from dim_date  0
+QA-01 KPI Reconciliation      PASS
+QA-02 Filter & Slicer         PASS
+QA-03 Time / Date             PASS
+QA-04 Visual & Storytelling   PASS
+QA-05 Project Readiness       PASS
 ```
 
-## Data Modeling Principles
+### Final logistics reconciliation
 
-The project intentionally preserves source evidence in the analytical layer. Historical timestamp anomalies are not silently overwritten in analytical fact construction; business-data-quality handling is separated from analytical representation.
+```text
+Late Orders             = 6,535
+Late Delivery Rate      = 6.77%
+Average Delivery Days   = 12.56
+```
 
-The Power BI model follows these principles:
+---
 
-- Preserve analytical grain.
-- Avoid unnecessary fact-to-fact joins.
-- Use controlled relationship directions.
-- Use a dedicated Date dimension.
-- Validate KPI definitions against the analytical pipeline.
-- Separate descriptive findings from causal claims.
+## Technology Stack
+
+| Area | Technology |
+|---|---|
+| Data preparation | Python |
+| Analytical processing | Polars |
+| Querying / SQL assets | SQL |
+| Data modeling | Dimensional / analytical modeling |
+| BI / Reporting | Power BI |
+| Measures | DAX |
+| Version control | Git / GitHub |
+| Documentation | Markdown |
+
+---
 
 ## Project Structure
 
@@ -299,22 +410,32 @@ The Power BI model follows these principles:
 Enterprise-ECommerce-Analytics/
 │
 ├── data/
-│   ├── raw/
+│   ├── raw/                    # local source files; ignored by Git
 │   ├── cleaned/
-│   └── analytical/            # generated analytical Parquet files
+│   └── analytical/             # generated analytical outputs; ignored by Git
 │
 ├── src/
-│   └── analytics/             # Python/Polars analytical pipeline
+│   └── analytics/              # Python / Polars analytical pipeline
 │
-├── sql/                       # SQL assets
-├── notebooks/                 # exploratory work
-├── tests/                     # validation/testing
-├── dashboard/                 # dashboard-related assets
-├── docs/                      # project documentation
-├── reports/                   # optional report artifacts
+├── sql/                        # SQL assets
+├── notebooks/                  # exploratory work
+├── tests/                      # validation / testing
+├── dashboard/                  # dashboard-related assets
+│
+├── docs/
+│   ├── business/
+│   ├── data/
+│   ├── data_model.md
+│   ├── kpi_definitions.md
+│   ├── reporting_scope.md
+│   ├── insights.md
+│   ├── decision_log.md
+│   ├── glossary.md
+│   └── index.md
+│
 ├── powerbi/
 │   └── Enterprise-ECommerce-Analytics.pbix
-│                               # local Power BI artifact; ignored by Git
+│       # local Power BI artifact; ignored by Git
 │
 ├── README.md
 ├── CHANGELOG.md
@@ -323,26 +444,20 @@ Enterprise-ECommerce-Analytics/
 └── .gitignore
 ```
 
-## Power BI Artifact
-
-The Power BI report is stored locally at:
-
-```text
-powerbi/Enterprise-ECommerce-Analytics.pbix
-```
-
-The `.pbix` file is intentionally ignored by Git because it is a binary reporting artifact. The analytical code, documentation, and project structure remain version-controlled.
+---
 
 ## Reproducibility
 
-The analytical pipeline is built with Python and Polars. Typical execution follows the project module pattern:
+The analytical pipeline uses Python and Polars.
+
+Typical execution pattern:
 
 ```powershell
 python -m py_compile <module_path>
 python -m <module>
 ```
 
-The project follows a controlled workflow:
+The project follows:
 
 ```text
 Build
@@ -362,35 +477,130 @@ Dashboard QA
 Documentation
 ```
 
-## Git Checkpoint
+---
 
-The project has a clean Git checkpoint after the Power BI artifact exclusion was added:
+## Documentation
+
+The repository contains detailed supporting documentation:
+
+| Document | Purpose |
+|---|---|
+| [`docs/data_model.md`](docs/data_model.md) | Data architecture, grain, relationships, and semantic model |
+| [`docs/kpi_definitions.md`](docs/kpi_definitions.md) | Official KPI definitions and validation baseline |
+| [`docs/reporting_scope.md`](docs/reporting_scope.md) | Reporting-period scope and 2016 handling |
+| [`docs/insights.md`](docs/insights.md) | Business findings and recommendations |
+| [`docs/decision_log.md`](docs/decision_log.md) | Major analytical and implementation decisions |
+| [`docs/glossary.md`](docs/glossary.md) | Project terminology |
+| [`docs/index.md`](docs/index.md) | Documentation navigation |
+
+---
+
+## Data Source Note
+
+The project uses the Olist Brazilian E-Commerce dataset as the analytical source.
+
+Raw source files are intentionally **not included in the public Git repository**. They remain local and are ignored by Git.
+
+This keeps the public repository focused on:
 
 ```text
-5cf9d5d chore: ignore Power BI report files
+Source preparation
++
+Analytical code
++
+Model
++
+Metrics
++
+Validation
++
+Power BI methodology
++
+Business storytelling
 ```
 
-Previous analytical foundation checkpoint:
+For the exact data-source and reporting decisions, see the project documentation.
+
+---
+
+## Git & Repository Hygiene
+
+The repository intentionally excludes:
 
 ```text
-5b6ea91 feat: finalize date dimension, KPI metrics, and reporting layer
+.env
+data/raw/
+data/analytical/
+data/processed/
+powerbi/*.pbix
 ```
+
+The public repository therefore contains the version-controlled analytical and documentation assets without publishing the raw source CSV files or local Power BI binary.
+
+---
 
 ## Portfolio Positioning
 
-This project demonstrates an end-to-end Data Analyst workflow covering:
+This project is intended to demonstrate an end-to-end **Data Analyst / BI Analyst** workflow rather than only a dashboard-building exercise.
 
-- Data preparation
-- Analytical modeling
-- Dimensional design
-- KPI governance
-- Data-quality validation
-- Python/Polars analytics
-- Power BI semantic modeling
-- DAX measures
-- Dashboard design
-- Business storytelling
-- Action-oriented recommendations
-- Git-based project management
+It demonstrates practical capability across:
 
-The project is intended to be presented as a **production-style e-commerce analytics portfolio case study** rather than only a visualization exercise.
+```text
+Data preparation
+Analytical modeling
+Dimensional design
+KPI governance
+Data-quality validation
+Python / Polars analytics
+SQL
+Power BI semantic modeling
+DAX
+Dashboard design
+Business storytelling
+Business recommendations
+Git-based project management
+```
+
+The project emphasizes the analytical process:
+
+```text
+Reliable data
+    +
+Clear metric definitions
+    +
+Validated calculations
+    +
+Useful visualization
+    +
+Business interpretation
+```
+
+---
+
+## Repository Status
+
+Current project status:
+
+```text
+Analytics pipeline          COMPLETE
+Power BI dashboard          COMPLETE
+KPI reconciliation          COMPLETE
+Dashboard QA                COMPLETE
+Documentation               COMPLETE
+Git repository hygiene      COMPLETE
+Portfolio packaging         COMPLETE
+```
+
+**Project status: COMPLETE**
+
+---
+
+## Related Documentation
+
+Start with:
+
+- [`docs/index.md`](docs/index.md)
+- [`docs/data_model.md`](docs/data_model.md)
+- [`docs/kpi_definitions.md`](docs/kpi_definitions.md)
+- [`docs/insights.md`](docs/insights.md)
+
