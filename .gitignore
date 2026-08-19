@@ -44,3 +44,6 @@ data/processed/
 data/analytical/
 # Power BI reports
 powerbi/*.pbix
+
+# Raw source datasets
+data/raw/
