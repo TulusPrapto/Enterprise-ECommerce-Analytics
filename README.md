@@ -116,23 +116,35 @@ The report contains four focused pages.
 | **Page 3 — Logistics & Operations** | Delivery performance, late orders, and order status |
 | **Page 4 — Business Insights & Storytelling** | Key findings, business implications, and recommendations |
 
-### Dashboard preview
+### Dashboard Preview
 
-The Power BI artifact is stored locally at:
+The Power BI report contains four focused pages designed to present the analysis from executive performance monitoring through operational analysis and business recommendations.
 
-```text
-powerbi/Enterprise-ECommerce-Analytics.pbix
-```
+#### Page 1 — Executive Overview
 
-The `.pbix` file is intentionally excluded from Git because it is a binary reporting artifact.
+Provides a high-level view of sales, product, customer, logistics, and operational performance.
 
-For a public portfolio presentation, dashboard screenshots can be added under:
+![Executive Overview](assets/dashboard/executive-overview.jpg)
 
-```text
-assets/dashboard/
-```
+#### Page 2 — Customers & Product Analysis
 
-without changing the analytical model or documentation structure.
+Examines new versus repeat customers, customer geography, and top-performing SKUs by revenue.
+
+![Customers & Product Analysis](assets/dashboard/customers-product-analysis.jpg)
+
+#### Page 3 — Logistics & Operations
+
+Focuses on delivery performance, late orders, average delivery time, and order status distribution.
+
+![Logistics & Operations](assets/dashboard/logistics-operations.jpg)
+
+#### Page 4 — Business Insights & Storytelling
+
+Summarizes key business findings and translates the analytical results into actionable recommendations.
+
+![Business Insights & Storytelling](assets/dashboard/business-insights-storytelling.jpg)
+
+The Power BI `.pbix` file is intentionally excluded from Git because it is a local binary reporting artifact. The repository provides the dashboard screenshots as the public portfolio representation.
 
 ---
 
