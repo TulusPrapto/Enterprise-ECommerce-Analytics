@@ -14,6 +14,8 @@
 --
 -- Late delivery definition:
 --   Actual delivery date > estimated delivery date.
+--   Comparison is performed at DATE granularity to match the
+--   official mart_logistics KPI definition.
 --
 -- SQL skills demonstrated:
 --   - CTE
@@ -38,8 +40,8 @@ WITH delivery_metrics AS (
         ) AS delivery_days,
 
         CASE
-            WHEN order_delivered_customer_date
-                 > order_estimated_delivery_date
+            WHEN CAST(order_delivered_customer_date AS DATE)
+                 > CAST(order_estimated_delivery_date AS DATE)
             THEN 1
             ELSE 0
         END AS is_late
